@@ -1173,17 +1173,17 @@ header .menu-burger__wrapper .menu-list .line {
 }
 
 .shop-card-item .photo {
-    max-width: 190px;
-    max-height: 190px;
-    width: 190px;
-    height: 190px;
+    max-width: 0px;
+    max-height: 0px;
+    width: 0px;
+    height: 0px;
     object-fit: contain
 }
 
 .shop-card-item .shop-card-item-title {
     font-family: Inter, sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 40;
     font-size: 16px;
     line-height: 24px;
     text-align: center;
@@ -9742,7 +9742,7 @@ input[type=number]:hover {
 .our-team__wrap {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 26px 60px
+    grid-gap: 26px 10px
 }
 
 @media (max-width:900px) {
