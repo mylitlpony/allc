@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="css/css2.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="css/jquery-3.js"></script>
+
+    <link rel="apple-touch-icon" sizes="76x76" href="image/76x76.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/16x16.png">
+    <link rel="mask-icon" href="image/32x32.svg" color="#5bbad5">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <style>
+        .error_panel {
+            margin-top: 4px;
+            color: #842029;
+            background-color: #f8d7da;
+            border-color: #f5c2c7;
+            position: relative;
+            padding: 1rem 1rem;
+            margin-bottom: 1rem;
+            border-radius: 0.25rem;
+        }
+
+        .message_panel {
+            margin-top: 4px;
+            color: #FFFFFF;
+            background-color: #0c4128;
+            border-color: #0c4128;
+            position: relative;
+            padding: 1rem 1rem;
+            margin-bottom: 1rem;
+            border-radius: 0.25rem;
+        }
+
+        .visible {
+            display: block;
+        }
+
+        .invisible {
+            display: none;
+        }
+
+        a.disabled {
+            pointer-events: none;
+        }
+    </style>
+
+    <title>Catalog</title>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+    <header class="header-main">
+        <div class="container">
+            <div class="header-container-child">
+                <div class="header-left">
+                    <div class="logo">
+
+                        <a href="https://allc.app" class="logo">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="82" viewBox="0 0 820 500">
+                                <defs>
+                                    <style>
+                                        .cls-1,
+                                        .cls-2,
+                                        .cls-4 {
+                                            fill: #fff;
+                                        }
+
+                                        .cls-1,
+                                        .cls-2,
+                                        .cls-3 {
+                                            fill-rule: evenodd;
+                                        }
+
+                                        .cls-1 {
+                                            filter: url(#filter);
+                                        }
+
+                                        .cls-2 {
+                                            filter: url(#filter-2);
+                                        }
+
+                                        #cls-3 {
+                                            fill: #00baef;
+
+                                        }
+
+
+                                        .cls-5 {
+                                            font-size: 334.375px;
+                                            fill: #585858;
+                                            font-family: Arial;
+                                        }
+
+                                        .cls-6 {
+                                            font-size: 75px;
+                                            font-family: Calibri;
+                                        }
+                                    </style>
+                                    <filter id="filter" x="676.844" y="110.156" width="74.281" height="75.844"
+                                        filterUnits="userSpaceOnUse">
+                                        <feFlood result="flood" flood-color="#00baef" />
+                                        <feComposite result="composite" operator="in" in2="SourceGraphic" />
+                                        <feBlend result="blend" in2="SourceGraphic" />
+                                    </filter>
+                                    <filter id="filter-2" x="601" y="18.5" width="75.844" height="76.656"
+                                        filterUnits="userSpaceOnUse">
+                                        <feFlood result="flood" flood-color="#00baef" />
+                                        <feComposite result="composite" operator="in" in2="SourceGraphic" />
+                                        <feBlend result="blend" in2="SourceGraphic" />
+                                    </filter>
+                                </defs>
+                                <path id="Эллипс_5" data-name="Эллипс 5" class="cls-1"
+                                    d="M713.983,110.169c20.506,0,37.129,16.976,37.129,37.916S734.489,186,713.983,186s-37.128-16.975-37.128-37.915S693.478,110.169,713.983,110.169Z" />
+                                <path id="Эллипс_4" data-name="Эллипс 4" class="cls-2"
+                                    d="M638.928,18.507A38.33,38.33,0,1,1,601,56.835,38.129,38.129,0,0,1,638.928,18.507Z" />
+                                <path id="cls-3" data-name="Эллипс 1" class="cls-3"
+                                    d="M764.562,1C794.075,1,818,25.438,818,55.585s-23.925,54.584-53.438,54.584-53.438-24.438-53.438-54.584S735.049,1,764.562,1Z" />
+                                <path id="cls-3" data-name="Прямоугольник 1" class="cls-3"
+                                    d="M666.9,233.123h71.546v39.855H666.9V233.123Z" />
+                                <path id="cls-3" data-name="Эллипс 3" class="cls-3"
+                                    d="M702.671,209c23.244,0,42.086,7.278,42.086,16.257s-18.842,16.257-42.086,16.257-42.086-7.279-42.086-16.257S679.428,209,702.671,209Z" />
+                                <path id="cls-3" data-name="Эллипс 2" class="cls-3"
+                                    d="M703,266.39c64.065,0,116,52.072,116,116.305S767.065,499,703,499,587,446.929,587,382.7,638.935,266.39,703,266.39Z" />
+                                <ellipse id="Эллипс_6" data-name="Эллипс 6" class="cls-4" cx="703" cy="224.5" rx="28"
+                                    ry="7.5" />
+                                <text id="All" class="cls-5"
+                                    transform="translate(10.898 404.337) scale(1.55 1.599)">All</text>
+                                <text id="All_Chemical" data-name="All Chemical" class="cls-6"
+                                    transform="translate(0 487.06) scale(1.574 1.352)">All Chemical</text>
+                            </svg>
+
+
+
+
+                        </a>
+
+                    </div>
+
+
+
+
+
+
+                    <div class="navigation">
+                        <div class="main-menu" id="menu">
+
+
+                            <input type="checkbox" id="menu-checkbox">
+                            <div id="menu-container">
+                                <div class="menu-mob-head">
+                                    Каталог
+                                    <label for="menu-checkbox">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.4971 9.00017L17.6895 1.80779C18.1035 1.39381 18.1035 0.724662 17.6895 0.310674C17.2755 -0.103314 16.6064 -0.103314 16.1924 0.310674L9.00002 7.50305L1.80761 0.310674C1.39362 -0.103314 0.724479 -0.103314 0.310491 0.310674C-0.103497 0.724662 -0.103497 1.39381 0.310491 1.80779L7.50286 9.00017L0.310491 16.1925C-0.103497 16.6065 -0.103497 17.2757 0.310491 17.6897C0.516957 17.8961 0.788004 17.9999 1.05905 17.9999C1.3301 17.9999 1.60114 17.8961 1.80761 17.6897L8.99998 10.4973L16.1924 17.6897C16.3988 17.8961 16.6699 17.9999 16.9409 17.9999C17.212 17.9999 17.483 17.8961 17.6895 17.6897C18.1035 17.2757 18.1035 16.6065 17.6895 16.1925L10.4971 9.00017Z"
+                                                fill="#B7B7B7"></path>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="menu-list">
+                                    <noscript>
+                                        <style>
+                                            .menu-level-2-container .menu-mob-head label {
+                                                display: none !important;
+                                            }
+                                        </style>
+                                    </noscript>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-links">
+                            <a href="сomands.htm">Команды</a>
+                            <a href="users.htm">Пользователи</a>
+                            <a href="obmens.htm">Обменики</a>
+
+                        </div>
+                    </div>
+
+
+                    <div class="menu-burger">
+                        <label for="burger-checkbox">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3.5 9.02502H16C16.2486 9.02502 16.4871 8.92625 16.6629 8.75044C16.8387 8.57462 16.9375 8.33616 16.9375 8.08752C16.9375 7.83888 16.8387 7.60043 16.6629 7.42461C16.4871 7.2488 16.2486 7.15002 16 7.15002H3.5C3.25136 7.15002 3.0129 7.2488 2.83709 7.42461C2.66127 7.60043 2.5625 7.83888 2.5625 8.08752C2.5625 8.33616 2.66127 8.57462 2.83709 8.75044C3.0129 8.92625 3.25136 9.02502 3.5 9.02502Z"
+                                    fill="black"></path>
+                                <path
+                                    d="M29.4375 16C29.4375 15.7514 29.3387 15.5129 29.1629 15.3371C28.9871 15.1613 28.7486 15.0625 28.5 15.0625H3.5C3.25136 15.0625 3.0129 15.1613 2.83709 15.3371C2.66127 15.5129 2.5625 15.7514 2.5625 16C2.5625 16.2486 2.66127 16.4871 2.83709 16.6629C3.0129 16.8387 3.25136 16.9375 3.5 16.9375H28.5C28.7486 16.9375 28.9871 16.8387 29.1629 16.6629C29.3387 16.4871 29.4375 16.2486 29.4375 16Z"
+                                    fill="black"></path>
+                                <path
+                                    d="M28.5 22.975H16C15.7514 22.975 15.5129 23.0737 15.3371 23.2496C15.1613 23.4254 15.0625 23.6638 15.0625 23.9125C15.0625 24.1611 15.1613 24.3996 15.3371 24.5754C15.5129 24.7512 15.7514 24.85 16 24.85H28.5C28.7486 24.85 28.9871 24.7512 29.1629 24.5754C29.3387 24.3996 29.4375 24.1611 29.4375 23.9125C29.4375 23.6638 29.3387 23.4254 29.1629 23.2496C28.9871 23.0737 28.7486 22.975 28.5 22.975Z"
+                                    fill="black"></path>
+                            </svg>
+                        </label>
+                        <input type="checkbox" id="burger-checkbox">
+                        <div class="menu-burger__wrapper">
+                            <div class="menu-mob-head">
+                                Меню
+                                <label for="burger-checkbox">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.4971 9.00017L17.6895 1.80779C18.1035 1.39381 18.1035 0.724662 17.6895 0.310674C17.2755 -0.103314 16.6064 -0.103314 16.1924 0.310674L9.00002 7.50305L1.80761 0.310674C1.39362 -0.103314 0.724479 -0.103314 0.310491 0.310674C-0.103497 0.724662 -0.103497 1.39381 0.310491 1.80779L7.50286 9.00017L0.310491 16.1925C-0.103497 16.6065 -0.103497 17.2757 0.310491 17.6897C0.516957 17.8961 0.788004 17.9999 1.05905 17.9999C1.3301 17.9999 1.60114 17.8961 1.80761 17.6897L8.99998 10.4973L16.1924 17.6897C16.3988 17.8961 16.6699 17.9999 16.9409 17.9999C17.212 17.9999 17.483 17.8961 17.6895 17.6897C18.1035 17.2757 18.1035 16.6065 17.6895 16.1925L10.4971 9.00017Z"
+                                            fill="#B7B7B7"></path>
+                                    </svg>
+                                </label>
+                            </div>
+                            <div class="menu-list">
+                                <a href="сomands.htm">Команды</a>
+                                <a href="users.htm">Пользователи</a>
+                                <a href="users.htm">Обменики</a>
+
+                                <div class="line"></div>
+                                <a href="https://www.vipole.com/?bcode=3312187">Скачать приложение: <span
+                                        class="account-money">Vipole.com</span></a>
+                                <a href="settings_profil.htm" class="">Настройки Профиля</a>
+                                <a href="chat.htm" class="">Чат сообщения</a>
+                                <a href="/" class="">Выход</a>
+                                <div class="line"></div>
+
+                                <div class="menu-list__shops">
+
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="account-block">
+                    <a href="https://www.vipole.com/?bcode=3312187" class="account-money">скачать приложение Vipole</a>
+                    <a href="chat.htm" class="account-mail">
+
+
+                        <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M21.1875 0.25H2.8125C1.26169 0.25 0 1.51169 0 3.0625V5.38258L10.3215 13.0598C10.8234 13.4332 11.4117 13.6199 12 13.6199C12.5883 13.6199 13.1766 13.4332 13.6785 13.0598L24 5.38258V3.0625C24 1.51169 22.7383 0.25 21.1875 0.25ZM22.125 4.44044L12.5595 11.5553C12.2249 11.8043 11.7751 11.8043 11.4405 11.5553L1.875 4.44044V3.0625C1.875 2.54556 2.29556 2.125 2.8125 2.125H21.1875C21.7044 2.125 22.125 2.54556 22.125 3.0625V4.44044ZM22.125 9.11402L24 7.71939V16.9375C24 18.4883 22.7383 19.75 21.1875 19.75H2.8125C1.26169 19.75 0 18.4883 0 16.9375V7.71939L1.875 9.11402V16.9375C1.875 17.4544 2.29556 17.875 2.8125 17.875H21.1875C21.7044 17.875 22.125 17.4544 22.125 16.9375V9.11402Z"
+                                fill="black"></path>
+                        </svg>
+
+                    </a>
+                    <div class="account-image" id="account-info">
+                        <a href="/in.html" class="account-profile">
+                            <img src="image/allc_ac.jpg" alt="Account image" width="42" height="42">
+                        </a>
+                        <div id="account-info-block">
+                            <div class="account-wrapper">
+                                <a href="settings_profil.htm" class="">Настройки Профиля</a>
+                                <a href="/" class="">Выход</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+
+
+
+
+
+    <div class="messenger messenger_add">
+        <div class="container fw">
+            <div class="messenger_wrap">
+                <input type="checkbox" id="back" name="back">
+                <div class="messenger_left">
+                    <form action="/cabinet/chat/20e8b024-cd27-4b85-9351-a2d0bd7a9c60/"
+                        class="messenger_search_wrap messenger_add_wrap">
+                        <input type="hidden" name="filter" value="">
+                        <div class="messenger_add_input">
+                            <input name="q" type="text" placeholder="Поэск" value="">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M15.8045 14.862L11.2545 10.3121C12.1359 9.22341 12.6665 7.84008 12.6665 6.33344C12.6665 2.84147 9.82522 0.00015831 6.33325 0.00015831C2.84128 0.00015831 0 2.84144 0 6.33341C0 9.82537 2.84132 12.6667 6.33328 12.6667C7.83992 12.6667 9.22325 12.136 10.3119 11.2547L14.8619 15.8047C14.9919 15.9347 15.1625 16 15.3332 16C15.5039 16 15.6745 15.9347 15.8045 15.8047C16.0652 15.544 16.0652 15.1227 15.8045 14.862ZM6.33328 11.3334C3.57597 11.3334 1.33333 9.09073 1.33333 6.33341C1.33333 3.57609 3.57597 1.33346 6.33328 1.33346C9.0906 1.33346 11.3332 3.57609 11.3332 6.33341C11.3332 9.09073 9.09057 11.3334 6.33328 11.3334Z"
+                                    fill="black"></path>
+                            </svg>
+                        </div>
+                        <div class="messenger_add_setting">
+                            <label for="call_setting">
+                                <svg width="21" height="14" viewBox="0 0 21 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.9961 6.73244C20.9961 6.53819 20.9189 6.3519 20.7816 6.21454C20.6442 6.07719 20.4579 6.00002 20.2637 6.00002H0.732422C0.538172 6.00002 0.351877 6.07719 0.214521 6.21454C0.0771656 6.3519 0 6.53819 0 6.73244C0 6.92669 0.0771656 7.11299 0.214521 7.25034C0.351877 7.3877 0.538172 7.46486 0.732422 7.46486H20.2637C20.4579 7.46486 20.6442 7.3877 20.7816 7.25034C20.9189 7.11299 20.9961 6.92669 20.9961 6.73244Z"
+                                        fill="black"></path>
+                                    <path
+                                        d="M20.9961 0.732441C20.9961 0.538191 20.9189 0.351897 20.7816 0.214541C20.6442 0.0771851 20.4579 1.90735e-05 20.2637 1.90735e-05H0.732422C0.538172 1.90735e-05 0.351877 0.0771851 0.214521 0.214541C0.0771656 0.351897 0 0.538191 0 0.732441C0 0.926691 0.0771656 1.11299 0.214521 1.25034C0.351877 1.3877 0.538172 1.46486 0.732422 1.46486H20.2637C20.4579 1.46486 20.6442 1.3877 20.7816 1.25034C20.9189 1.11299 20.9961 0.926691 20.9961 0.732441Z"
+                                        fill="black"></path>
+                                    <path
+                                        d="M20.9961 12.7324C20.9961 12.5382 20.9189 12.3519 20.7816 12.2145C20.6442 12.0772 20.4579 12 20.2637 12H0.732422C0.538172 12 0.351877 12.0772 0.214521 12.2145C0.0771656 12.3519 0 12.5382 0 12.7324C0 12.9267 0.0771656 13.113 0.214521 13.2503C0.351877 13.3877 0.538172 13.4649 0.732422 13.4649H20.2637C20.4579 13.4649 20.6442 13.3877 20.7816 13.2503C20.9189 13.113 20.9961 12.9267 20.9961 12.7324Z"
+                                        fill="black"></path>
+                                </svg>
+                            </label>
+                            <input type="checkbox" id="call_setting">
+                            <div class="messenger_setting_hide">
+                                <a
+                                    href="/cabinet/chat/20e8b024-cd27-4b85-9351-a2d0bd7a9c60/e153347b-3743-42d6-9cdb-163c4bec3b8c/?filter=all&amp;q=&amp;roomsCount=20">
+                                    Все
+                                </a>
+                                <a
+                                    href="/cabinet/chat/20e8b024-cd27-4b85-9351-a2d0bd7a9c60/e153347b-3743-42d6-9cdb-163c4bec3b8c/?filter=disputs&amp;q=&amp;roomsCount=20">
+                                    Только диспуты
+                                </a>
+                                <a
+                                    href="/cabinet/chat/20e8b024-cd27-4b85-9351-a2d0bd7a9c60/e153347b-3743-42d6-9cdb-163c4bec3b8c/?filter=questions&amp;q=&amp;roomsCount=20">
+                                    Только вопросы
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="messenger_user_wrap chat_rooms">
+
+                        <input type="text" hidden="" id="rooms_count" value="20">
+
+                        <a href="/cabinet/chat/20e8b024-cd27-4b85-9351-a2d0bd7a9c60/e153347b-3743-42d6-9cdb-163c4bec3b8c/?roomsCount=20&amp;q=&amp;filter="
+                            class="messenger_user_item active_messages">
+
+
+                            <img src="image/allc_ac.jpg">
+
+                            <div class="messenger_user_info">
+                                <div class="messenger_user_data">
+
+                                    <p>
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">2022-12-12</font>
+                                        </font>
+                                    </p>
+                                </div>
+                                <p class="user_info_title">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">органик</font>
+                                    </font>
+                                </p>
+
+                                <p class="user_info_text">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Томас, Organic54, Поли Грей, Фин Хелби,
+                                            Артур Хелби</font>
+                                    </font>
+                                </p>
+                            </div>
+                        </a>
+
+
+
+                        <a
+                            href="/cabinet/chat/20e8b024-cd27-4b85-9351-a2d0bd7a9c60/e153347b-3743-42d6-9cdb-163c4bec3b8c/?roomsCount=40&amp;q=&amp;filter=">
+
+                        </a>
+
+                    </div>
+                </div>
+                <div class="messenger_right">
+                    <div class="messenger_right_wrap">
+                        <div class=" messenger_right_container mes_add">
+                            <label for="back" class="messenger_back">
+                                <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.53207 13.4437C7.7139 13.4479 7.89246 13.3927 8.04292 13.2857C8.19338 13.1786 8.30827 13.0251 8.37161 12.8465C8.43496 12.6679 8.44361 12.4731 8.39636 12.2891C8.34912 12.1051 8.24833 11.9412 8.108 11.8199L2.75375 7.01461L8.108 2.21097C8.20507 2.13623 8.28637 2.04134 8.3468 1.93216C8.40722 1.82298 8.44548 1.70187 8.45917 1.57649C8.47287 1.4511 8.4617 1.32413 8.42637 1.20347C8.39104 1.08281 8.33232 0.971062 8.25387 0.875283C8.17542 0.779505 8.07894 0.701812 7.97047 0.646906C7.862 0.592 7.74387 0.561161 7.6235 0.556295C7.50312 0.551429 7.38308 0.572583 7.27089 0.61857C7.1587 0.664557 7.05679 0.734314 6.97153 0.823475L0.8414 6.31817C0.745134 6.40423 0.667832 6.51105 0.614825 6.63145C0.561818 6.75184 0.534369 6.88288 0.534369 7.01546C0.534369 7.14804 0.561818 7.27908 0.614825 7.39947C0.667832 7.51986 0.745134 7.62679 0.8414 7.71285L6.97153 13.2128C7.12638 13.3569 7.32501 13.4389 7.53207 13.444L7.53207 13.4437Z" fill="black"></path>
+                                </svg>
+                            </label>
+                            <div class="messenger_right_top">
+                                
+                                
+                                
+                                <img src="%D0%A1%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D1%8F2_files/a.jpg" alt="user">
+                                
+                                
+                                
+    
+                                
+                                
+    
+                                
+    
+                                <div class="messenger_right_info messenger_right_info_3">
+                                    <p class="messenger_right_title">Приветвую коллеги</p>
+                                    <p class="messenger_right_text">Админ, organic54, Сотрудник, Сотрудник, Love Shop, Сотрудник</p>
+                                </div>
+    
+                                <div class="messenger_top_setting">
+                                    <label for="agree-leave" class="messenger_top_item">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_2138_67296)">
+                                                <path d="M13.375 20.25H9.70833C9.45533 20.25 9.25 20.0447 9.25 19.7917C9.25 19.5387 9.45533 19.3334 9.70833 19.3334H13.375C14.1331 19.3334 14.75 18.7164 14.75 17.9584V13.375C14.75 13.122 14.9553 12.9167 15.2083 12.9167C15.4613 12.9167 15.6667 13.122 15.6667 13.375V17.9584C15.6667 19.2215 14.6391 20.25 13.375 20.25Z" fill="black" stroke="black" stroke-width="0.3"></path>
+                                                <path d="M22.543 11.0834H13.3763C13.1233 11.0834 12.918 10.878 12.918 10.625C12.918 10.372 13.1233 10.1667 13.3763 10.1667H22.543C22.796 10.1667 23.0013 10.372 23.0013 10.625C23.0013 10.878 22.796 11.0834 22.543 11.0834Z" fill="black" stroke="black" stroke-width="0.3"></path>
+                                                <path d="M8.33333 23C8.13167 23 7.93458 22.9661 7.7485 22.9001L2.25767 21.0695C1.506 20.8193 1 20.1208 1 19.3333V2.83333C1 1.82225 1.82225 1 2.83333 1C3.03683 1 3.23483 1.03392 3.41908 1.10083L8.909 2.9305C9.66067 3.17983 10.1667 3.87833 10.1667 4.66667V21.1667C10.1667 22.1777 9.34442 23 8.33333 23ZM2.83333 1.91667C2.32733 1.91667 1.91667 2.32825 1.91667 2.83333V19.3333C1.91667 19.7257 2.16967 20.074 2.54733 20.2005L8.04733 22.0338C8.64867 22.2474 9.25 21.7662 9.25 21.1667V4.66667C9.25 4.27342 8.997 3.92508 8.61933 3.80042L3.11933 1.96708C3.02492 1.93317 2.92867 1.91667 2.83333 1.91667Z" fill="black" stroke="black" stroke-width="0.3"></path>
+                                                <path d="M15.2083 8.33333C14.9553 8.33333 14.75 8.128 14.75 7.875V3.29167C14.75 2.53358 14.1331 1.91667 13.375 1.91667H2.83333C2.58033 1.91667 2.375 1.71133 2.375 1.45833C2.375 1.20533 2.58033 1 2.83333 1H13.375C14.6391 1 15.6667 2.0285 15.6667 3.29167V7.875C15.6667 8.128 15.4613 8.33333 15.2083 8.33333Z" fill="black" stroke="black" stroke-width="0.3"></path>
+                                                <path d="M18.8765 14.75C18.7592 14.75 18.6419 14.7051 18.552 14.6162C18.3733 14.4374 18.3733 14.1468 18.552 13.9681L21.8942 10.6259L18.552 7.28373C18.3733 7.10498 18.3733 6.8144 18.552 6.63565C18.7308 6.4569 19.0214 6.4569 19.2001 6.63565L22.8668 10.3023C23.0455 10.4811 23.0455 10.7716 22.8668 10.9504L19.2001 14.6171C19.1112 14.7051 18.9939 14.75 18.8765 14.75Z" fill="black" stroke="black" stroke-width="0.3"></path>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_2138_67296">
+                                                    <rect width="24" height="24" fill="white"></rect>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </label>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="messenger_output chat_messages" data="e839af63-0a8f-4cdd-aa16-96b3b0df7784">
+    
+    <div class="messages_list_12345"></div>
+    
+        
+            <div class="messenger_output_item">
+                <img src="%D0%A1%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D1%8F2_files/black_bar.jpeg" alt="user">
+                <div class="messenger_output_info">
+                    <p class="messenger_output_data">12-05-2022 12:28</p>
+                    <p class="messenger_output_title">organic54</p>
+                    <div class="messenger_output_text">
+                        
+                            <p>Приветвую коллеги, вот вас увидел решил связь опробовать как у них пхп пашит.</p>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+        
+        <a href="http://fhkjgxwtcw7dq56i5mkanw3hkxonfm6g6hgfkzgzg2desiqckk7ozlid.onion/chat/e839af63-0a8f-4cdd-aa16-96b3b0df7784/?roomsCount=1&amp;messagesCount=100&amp;q=">
+            
+        </a>
+    
+    </div>
+                        <div class="messenger_right_bottom">
+                            <form action="/chat/e839af63-0a8f-4cdd-aa16-96b3b0df7784/send/?messagesCount=50&amp;roomsCount=20&amp;q=" class="messenge_right_form" enctype="multipart/form-data" method="post">
+                                <textarea name="message" placeholder="Напишите сообщение"></textarea>
+                                <div class="right_form_btn">
+                                    <div class="call_moderator">
+                                        <input type="file" name="attachments" accept=".png,.jpg, .jpeg" id="post_attachments" style="display: none" multiple="">
+                                        <label for="post_attachments">
+                                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M22.2202 5.6875H18.7314L18.3251 4.46875C18.1293 3.87698 17.7518 3.36207 17.2463 2.99736C16.7408 2.63265 16.1331 2.43673 15.5098 2.4375H10.4902C9.86703 2.43703 9.25959 2.63307 8.75429 2.99776C8.24899 3.36244 7.87156 3.87718 7.67569 4.46875L7.26863 5.6875H3.77975C2.99305 5.68836 2.23882 6.00126 1.68254 6.55754C1.12626 7.11382 0.81336 7.86805 0.8125 8.65475V20.5985C0.81422 21.3846 1.1275 22.138 1.68368 22.6936C2.23987 23.2492 2.99361 23.5616 3.77975 23.5625H22.2235C23.0096 23.5608 23.763 23.2475 24.3186 22.6913C24.8742 22.1351 25.1866 21.3814 25.1875 20.5953V8.6515C25.1858 7.86537 24.8725 7.11197 24.3163 6.55639C23.7601 6.00081 23.0064 5.68836 22.2202 5.6875ZM23.5625 20.5953C23.5621 20.9511 23.4205 21.2923 23.1689 21.5439C22.9173 21.7955 22.5761 21.9371 22.2202 21.9375H3.77975C3.4239 21.9371 3.08274 21.7955 2.83111 21.5439C2.57948 21.2923 2.43793 20.9511 2.4375 20.5953V8.6515C2.43879 8.29621 2.58072 7.95589 2.83226 7.70496C3.08379 7.45404 3.42446 7.31293 3.77975 7.3125H7.85444C8.02489 7.31237 8.19099 7.25864 8.32923 7.1589C8.46746 7.05916 8.57082 6.91848 8.62469 6.75675L9.217 4.97982C9.30594 4.71254 9.47681 4.48008 9.70536 4.31541C9.9339 4.15075 10.2085 4.06226 10.4902 4.0625H15.5098C15.7916 4.06219 16.0664 4.15076 16.2949 4.31559C16.5235 4.48042 16.6943 4.71314 16.783 4.98063L17.3753 6.75675C17.4292 6.91848 17.5325 7.05916 17.6708 7.1589C17.809 7.25864 17.9751 7.31237 18.1456 7.3125H22.2202C22.5761 7.31293 22.9173 7.45449 23.1689 7.70611C23.4205 7.95774 23.5621 8.2989 23.5625 8.65475V20.5953Z" fill="black"></path>
+                                                <path d="M13 8.125C11.7948 8.125 10.6166 8.48239 9.6145 9.15198C8.61238 9.82157 7.83133 10.7733 7.37011 11.8868C6.90889 13.0003 6.78821 14.2255 7.02334 15.4076C7.25847 16.5897 7.83884 17.6755 8.69107 18.5277C9.5433 19.3799 10.6291 19.9603 11.8112 20.1954C12.9932 20.4305 14.2185 20.3099 15.332 19.8486C16.4455 19.3874 17.3972 18.6064 18.0668 17.6043C18.7364 16.6021 19.0938 15.424 19.0938 14.2188C19.092 12.6031 18.4495 11.0541 17.307 9.91172C16.1646 8.76929 14.6156 8.12672 13 8.125ZM13 18.6875C12.1162 18.6875 11.2522 18.4254 10.5173 17.9344C9.78242 17.4433 9.20965 16.7454 8.87142 15.9289C8.53319 15.1123 8.44469 14.2138 8.61712 13.3469C8.78955 12.4801 9.21515 11.6838 9.84012 11.0589C10.4651 10.4339 11.2613 10.0083 12.1282 9.83587C12.995 9.66344 13.8936 9.75193 14.7101 10.0902C15.5267 10.4284 16.2246 11.0012 16.7156 11.736C17.2067 12.4709 17.4688 13.3349 17.4688 14.2188C17.4675 15.4035 16.9962 16.5394 16.1585 17.3772C15.3207 18.215 14.1848 18.6862 13 18.6875Z" fill="black"></path>
+                                                <path d="M21.125 10.5625C21.5737 10.5625 21.9375 10.1987 21.9375 9.75C21.9375 9.30127 21.5737 8.9375 21.125 8.9375C20.6763 8.9375 20.3125 9.30127 20.3125 9.75C20.3125 10.1987 20.6763 10.5625 21.125 10.5625Z" fill="black"></path>
+                                            </svg>
+                                        </label>
+                                        
+                                    </div>
+                                    <button type="submit">Отправить</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="messenger_notes_wrap">
+                    <div class="messenger_notes_item">
+                        <p class="notes_title">
+                            <a href="/cabinet/buyers/20e8b024-cd27-4b85-9351-a2d0bd7a9c60/view/15c982df-e44e-4568-91e3-fcdc6b606ac6/"
+                                class="name" target="_blank">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">органический54</font>
+                                </font>
+                            </a>
+                        </p>
+                        <p class="notes_text">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Заметки: </font>
+                            </font><span>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">0</font>
+                                </font>
+                            </span>
+                        </p>
+                        <p class="notes_text">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Заказы: </font>
+                            </font><span>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">0 по 0.00 руб.</font>
+                                </font>
+                            </span>
+                        </p>
+                        <p class="notes_text">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Споры: </font>
+                            </font><span>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">0</font>
+                                </font>
+                            </span>
+                        </p>
+                        <p class="notes_text">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Отзывы: </font>
+                            </font><span>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">0.00/0</font>
+                                </font>
+                            </span>
+                        </p>
+                        <div class="notes_bottom">
+                            <p class="notes_text">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">ненаходы: </font>
+                                </font><span>
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">0</font>
+                                    </font>
+                                </span>
+                            </p>
+                            <p class="notes_text">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">замен: </font>
+                                </font><span>
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">0</font>
+                                    </font>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="messenger_notes_item">
+                        <p class="notes_title_2">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">
+                                    На площадке
+                                </font>
+                            </font>
+                        </p>
+                        <p class="notes_text">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Заметки: </font>
+                            </font><span>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">0</font>
+                                </font>
+                            </span>
+                        </p>
+                        <p class="notes_text">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Заказы: </font>
+                            </font><span>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">0 по 0.00 руб.</font>
+                                </font>
+                            </span>
+                        </p>
+                        <p class="notes_text">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Споры: </font>
+                            </font><span>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">0</font>
+                                </font>
+                            </span>
+                        </p>
+                        <p class="notes_text">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Отзывы: </font>
+                            </font><span>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">0.00/0</font>
+                                </font>
+                            </span>
+                        </p>
+                        <div class="notes_bottom">
+                            <p class="notes_text">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">ненаходы: </font>
+                                </font><span>
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">0</font>
+                                    </font>
+                                </span>
+                            </p>
+                            <p class="notes_text">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">замен: </font>
+                                </font><span>
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">0</font>
+                                    </font>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <input type="checkbox" class="input_hide call_chat" id="call_add_chat">
+
+        <input type="checkbox" id="close-error">
+        <div class="messenger_modal_error">
+            <div class="messenger_add_top">
+                <p>Сообщение</p>
+                <label for="close-error">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12.9394 13.1246C13.0493 13.0147 13.111 12.8657 13.111 12.7103C13.111 12.5549 13.0493 12.4058 12.9394 12.2959L1.89088 1.24739C1.781 1.1375 1.63196 1.07577 1.47656 1.07577C1.32116 1.07577 1.17213 1.1375 1.06224 1.24739C0.952357 1.35727 0.890625 1.50631 0.890625 1.66171C0.890625 1.81711 0.952357 1.96615 1.06224 2.07603L12.1108 13.1246C12.2207 13.2345 12.3697 13.2962 12.5251 13.2962C12.6805 13.2962 12.8295 13.2345 12.9394 13.1246Z"
+                            fill="black"></path>
+                        <path
+                            d="M12.9399 1.24734C12.8301 1.13746 12.681 1.07572 12.5256 1.07572C12.3702 1.07572 12.2212 1.13746 12.1113 1.24734L1.06276 12.2959C0.952873 12.4058 0.891141 12.5548 0.891141 12.7102C0.891141 12.8656 0.952873 13.0146 1.06276 13.1245C1.17264 13.2344 1.32168 13.2961 1.47708 13.2961C1.63248 13.2961 1.78151 13.2344 1.8914 13.1245L12.9399 2.07598C13.0498 1.9661 13.1116 1.81706 13.1116 1.66166C13.1116 1.50626 13.0498 1.35723 12.9399 1.24734Z"
+                            fill="black"></path>
+                    </svg>
+                </label>
+            </div>
+            <div class="messenger_modal_info-text"></div>
+            <div class="messenger_agree">
+                <label for="close-error" class="btn_dark">Прекрасно</label>
+            </div>
+        </div>
+        <input type="checkbox" id="agree-leave">
+    <div class="messenger_modal_leave">
+        <div class="messenger_add_top">
+            <p>Вы уверены, что хотите покинуть чат?</p>
+            <label for="agree-leave">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.9394 13.1246C13.0493 13.0147 13.111 12.8657 13.111 12.7103C13.111 12.5549 13.0493 12.4058 12.9394 12.2959L1.89088 1.24739C1.781 1.1375 1.63196 1.07577 1.47656 1.07577C1.32116 1.07577 1.17213 1.1375 1.06224 1.24739C0.952357 1.35727 0.890625 1.50631 0.890625 1.66171C0.890625 1.81711 0.952357 1.96615 1.06224 2.07603L12.1108 13.1246C12.2207 13.2345 12.3697 13.2962 12.5251 13.2962C12.6805 13.2962 12.8295 13.2345 12.9394 13.1246Z" fill="black"></path>
+                    <path d="M12.9399 1.24734C12.8301 1.13746 12.681 1.07572 12.5256 1.07572C12.3702 1.07572 12.2212 1.13746 12.1113 1.24734L1.06276 12.2959C0.952873 12.4058 0.891141 12.5548 0.891141 12.7102C0.891141 12.8656 0.952873 13.0146 1.06276 13.1245C1.17264 13.2344 1.32168 13.2961 1.47708 13.2961C1.63248 13.2961 1.78151 13.2344 1.8914 13.1245L12.9399 2.07598C13.0498 1.9661 13.1116 1.81706 13.1116 1.66166C13.1116 1.50626 13.0498 1.35723 12.9399 1.24734Z" fill="black"></path>
+                </svg>
+            </label>
+        </div>
+        <div class="messenger_agree">
+            <a href="http://fhkjgxwtcw7dq56i5mkanw3hkxonfm6g6hgfkzgzg2desiqckk7ozlid.onion/chat/e839af63-0a8f-4cdd-aa16-96b3b0df7784/leave" class="btn_dark">Да</a>
+            <a href="http://fhkjgxwtcw7dq56i5mkanw3hkxonfm6g6hgfkzgzg2desiqckk7ozlid.onion/chat/e839af63-0a8f-4cdd-aa16-96b3b0df7784/?roomsCount=20&amp;q=" class="btn_white">Нет</a>
+        </div>
+    </div>
+</div>   
+
+    <script>
+        $(document).ready(function () {
+            $('#close-error').change(function () {
+                $('.messenger_modal_error').removeClass('visible');
+            })
+            $('.messenger_modal_error .btn_dark').click(function () {
+                $('.messenger_modal_error').removeClass('visible');
+            });
+            $('#post_attachments').change(function () {
+                $('.messenge_right_form').submit();
+            })
+        })
+    </script>
+
+    <div class="current_room_uuid" data="e153347b-3743-42d6-9cdb-163c4bec3b8c"></div>
+    <div class="current_shop_uuid" data="20e8b024-cd27-4b85-9351-a2d0bd7a9c60"></div>
+
+    <script>
+        const update_rooms_delay = 30000
+        const update_messages_delay = 10000
+        let current_shop_uuid = "20e8b024-cd27-4b85-9351-a2d0bd7a9c60";
+        let selected_chat_uuid = "e153347b-3743-42d6-9cdb-163c4bec3b8c";
+        let rooms_count = "20";
+        let messages_count = "50";
+        let query = "";
+        let filter = "";
+        let roomsTimeoutID = 0
+        let messagesTimeoutID = 0
+
+        const updateRooms = () => {
+            let _url = "/cabinet/chat/" + current_shop_uuid + "/rooms?roomsCount=" + rooms_count + '&q=' + query + '&filter=' + filter
+            if (selected_chat_uuid.length > 0) {
+                _url = "/cabinet/chat/" + current_shop_uuid + "/rooms?roomsCount=" + rooms_count + "&selected_chat_uuid=" + selected_chat_uuid + '&q=' + query + '&filter=' + filter
+            }
+            $.ajax({
+                url: _url
+            }).done(function (res) {
+                if (res === "LOGGED OUT") {
+                    clearTimeout(roomsTimeoutID);
+                    clearTimeout(messagesTimeoutID);
+                    window.location.href = '/cabinet/';
+                } else {
+                    $('.chat_rooms').html(res);
+                }
+            });
+            roomsTimeoutID = setTimeout(updateRooms, update_rooms_delay);
+        }
+
+        const updateMessages = () => {
+            if (selected_chat_uuid.length === 0) {
+                return;
+            }
+            $.ajax({
+                url: "/cabinet/chat/" + current_shop_uuid + "/" + selected_chat_uuid + "/messages?messagesCount=" + messages_count + '&q=' + query + '&filter=' + filter
+            }).done(function (res) {
+                if (res === "LOGGED OUT") {
+                    clearTimeout(roomsTimeoutID);
+                    clearTimeout(messagesTimeoutID);
+                    window.location.href = '/cabinet/chat/' + current_shop_uuid + '/';
+                } else {
+                    $('.chat_messages').html(res);
+                }
+            });
+            messagesTimeoutID = setTimeout(updateMessages, update_messages_delay);
+        }
+
+        $(document).ready(function () {
+            if (selected_chat_uuid.length > 0) {
+                messagesTimeoutID = setTimeout(updateMessages, update_messages_delay);
+            }
+            roomsTimeoutID = setTimeout(updateRooms, update_rooms_delay);
+        })
+    </script>
+
+
+
+
+
+
+</body>
+</html>
+
+
+
