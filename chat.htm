@@ -335,7 +335,7 @@
                         class="messenger_search_wrap messenger_add_wrap">
                         <input type="hidden" name="filter" value="">
                         <div class="messenger_add_input">
-                            <input name="q" type="text" placeholder="Поэск" value="">
+                            <input name="q" type="text" placeholder="Поиск" value="">
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -366,21 +366,97 @@
                                 </a>
                                 <a
                                     href="/cabinet/chat/20e8b024-cd27-4b85-9351-a2d0bd7a9c60/e153347b-3743-42d6-9cdb-163c4bec3b8c/?filter=disputs&amp;q=&amp;roomsCount=20">
+                                    Только Контакты
+                                </a>
+                                <a
+                                    href="/cabinet/chat/20e8b024-cd27-4b85-9351-a2d0bd7a9c60/e153347b-3743-42d6-9cdb-163c4bec3b8c/?filter=disputs&amp;q=&amp;roomsCount=20">
+                                    Только Группы
+                                </a>
+                                <a
+                                    href="/cabinet/chat/20e8b024-cd27-4b85-9351-a2d0bd7a9c60/e153347b-3743-42d6-9cdb-163c4bec3b8c/?filter=disputs&amp;q=&amp;roomsCount=20">
                                     Только диспуты
                                 </a>
                                 <a
-                                    href="/cabinet/chat/20e8b024-cd27-4b85-9351-a2d0bd7a9c60/e153347b-3743-42d6-9cdb-163c4bec3b8c/?filter=questions&amp;q=&amp;roomsCount=20">
-                                    Только вопросы
+                                href="/cabinet/chat/20e8b024-cd27-4b85-9351-a2d0bd7a9c60/e153347b-3743-42d6-9cdb-163c4bec3b8c/?filter=disputs&amp;q=&amp;roomsCount=20">
+                                Только вопросы
                                 </a>
+                               
+
+
+
+
+                                <form class="lk_coupon_filter" action="/cabinet/coupons/20e8b024-cd27-4b85-9351-a2d0bd7a9c60/" method="get">
+
+                                    <div class="coupon_filter_box">
+                                        <p class="coupon_filter_title">С Дата</p>
+                                        <input type="date" class="data_input" placeholder="мм / дд / гг" name="date" value="">
+                                    </div>
+                                    <div class="coupon_filter_box">
+                                        <p class="coupon_filter_title">До Дата</p>
+                                        <input type="date" class="data_input" placeholder="мм / дд / гг" name="date" value="">
+                                    </div>
+                                    <div class="coupon_filter_box">
+                                        <p class="coupon_filter_title">Статус</p>
+                                        <div class="order_select">
+                                            <div class="order_select_box">
+                                                <div class="select-box">
+                                                    <div class="select-box__current" tabindex="2">
+                                                        <div class="select-box__value">
+                                                            <input class="select-box__input" type="radio" id="default-type_1" value="" name="status" checked="checked">
+                                                            <p class="select-box__input-text sort gray_text">Не выбран</p>
+                                                        </div>
+                                                        <div class="select-box__value">
+                                                            <input class="select-box__input" type="radio" id="coupon_item_1" value="USED" name="status">
+                                                            <p class="select-box__input-text sort">Заблокирован</p>
+                                                        </div>
+                                                        <div class="select-box__value">
+                                                            <input class="select-box__input" type="radio" id="coupon_item_2" value="ACTIVE" name="status">
+                                                            <p class="select-box__input-text sort">Активен</p>
+                                                        </div>
+                                                        <div class="select-box__value">
+                                                            <input class="select-box__input" type="radio" id="coupon_item_3" value="ACTIVE" name="status">
+                                                            <p class="select-box__input-text sort">все</p>
+                                                        </div>
+                                                        <div class="select-box__value">
+                                                            <input class="select-box__input" type="radio" id="coupon_item_4" value="ACTIVE" name="status">
+                                                            <p class="select-box__input-text sort">Группы</p>
+                                                        </div>
+                                                        <div class="select-box__value">
+                                                            <input class="select-box__input" type="radio" id="coupon_item_4" value="ACTIVE" name="status">
+                                                            <p class="select-box__input-text sort">Контакты</p>
+                                                        </div>
+                                                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M9.68734 0.977476C9.69039 0.856369 9.65023 0.73744 9.57238 0.637225C9.49454 0.53701 9.38285 0.460488 9.25296 0.418298C9.12307 0.376107 8.98138 0.370345 8.84757 0.401812C8.71376 0.433279 8.59454 0.500412 8.50639 0.593877L5.0116 4.16009L1.51805 0.593877C1.46369 0.529222 1.39468 0.475076 1.31528 0.434828C1.23587 0.39458 1.14779 0.369099 1.0566 0.359978C0.965411 0.350858 0.873068 0.358296 0.785317 0.381826C0.697567 0.405356 0.616294 0.444471 0.546637 0.496722C0.476979 0.548973 0.420476 0.613234 0.380544 0.685481C0.340612 0.757728 0.318184 0.836405 0.314645 0.916584C0.311107 0.996763 0.326491 1.07672 0.359937 1.15144C0.393381 1.22616 0.444114 1.29404 0.508958 1.35083L4.5051 5.43382C4.56769 5.49794 4.64538 5.54943 4.73294 5.58473C4.82049 5.62004 4.9158 5.63832 5.01222 5.63832C5.10864 5.63832 5.20394 5.62004 5.2915 5.58473C5.37906 5.54943 5.45682 5.49794 5.51942 5.43382L9.5194 1.35083C9.6242 1.24769 9.68378 1.11539 9.68749 0.977476L9.68734 0.977476Z" fill="#B7B7B7"></path>
+                                                        </svg>
+                                                    </div>
+                                                    <ul class="select-box__list">
+                                                        <li><label class="select-box__option" for="default-type_1" aria-hidden="aria-hidden">Не выбран</label></li>
+                                                        <li><label class="select-box__option" for="coupon_item_1" aria-hidden="aria-hidden">Заблокирован</label></li>
+                                                        <li><label class="select-box__option" for="coupon_item_2" aria-hidden="aria-hidden">Активен</label></li>
+                                                        <li><label class="select-box__option" for="default-type_3" aria-hidden="aria-hidden">Все</label></li>
+                                                        <li><label class="select-box__option" for="coupon_item_4" aria-hidden="aria-hidden">Группы</label></li>
+                                                        <li><label class="select-box__option" for="coupon_item_5" aria-hidden="aria-hidden">Контакты</label></li>
+                                                        
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="submit">Показать</button>
+                                </form>
+
+
+
                             </div>
                         </div>
                     </form>
+
 
                     <div class="messenger_user_wrap chat_rooms">
 
                         <input type="text" hidden="" id="rooms_count" value="20">
 
-                        <a href="/cabinet/chat/20e8b024-cd27-4b85-9351-a2d0bd7a9c60/e153347b-3743-42d6-9cdb-163c4bec3b8c/?roomsCount=20&amp;q=&amp;filter="
+                        <a href="chat.htm"
                             class="messenger_user_item active_messages">
 
 
@@ -397,26 +473,381 @@
                                 </div>
                                 <p class="user_info_title">
                                     <font style="vertical-align: inherit;">
-                                        <font style="vertical-align: inherit;">органик</font>
+                                        <font style="vertical-align: inherit;">User 1</font>
                                     </font>
                                 </p>
 
                                 <p class="user_info_text">
                                     <font style="vertical-align: inherit;">
-                                        <font style="vertical-align: inherit;">Томас, Organic54, Поли Грей, Фин Хелби,
-                                            Артур Хелби</font>
+                                        <font style="vertical-align: inherit;">User 1, User 2, User 3,
+                                            </font>
+                                    </font>
+                                </p>
+                            </div>
+
+
+
+
+                        </a>
+                        <a href="chat.htm"
+                            class="messenger_user_item alart_messages">
+
+
+                            <img src="image/allc_ac.jpg">
+
+                            <div class="messenger_user_info">
+                                <div class="messenger_user_data">
+
+                                    <p>
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">2022-12-12</font>
+                                        </font>
+                                    </p>
+                                </div>
+                                <p class="user_info_title">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">User 1</font>
+                                    </font>
+                                </p>
+
+                                <p class="user_info_text">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">User 1, User 2, User 3,
+                                            </font>
                                     </font>
                                 </p>
                             </div>
                         </a>
+                        <a href="chat.htm"
+                            class="messenger_user_item alart_messages">
 
 
+                            <img src="image/allc_ac.jpg">
+
+                            <div class="messenger_user_info">
+                                <div class="messenger_user_data">
+
+                                    <p>
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">2022-12-12</font>
+                                        </font>
+                                    </p>
+                                </div>
+                                <p class="user_info_title">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">User 1</font>
+                                    </font>
+                                </p>
+
+                                <p class="user_info_text">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">User 1, User 2, User 3,
+                                            </font>
+                                    </font>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="chat.htm"
+                            class="messenger_user_item alart_messages">
+
+
+                            <img src="image/allc_ac.jpg">
+
+                            <div class="messenger_user_info">
+                                <div class="messenger_user_data">
+
+                                    <p>
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">2022-12-12</font>
+                                        </font>
+                                    </p>
+                                </div>
+                                <p class="user_info_title">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">User 1</font>
+                                    </font>
+                                </p>
+
+                                <p class="user_info_text">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">User 1, User 2, User 3,
+                                            </font>
+                                    </font>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="chat.htm"
+                            class="messenger_user_item alart_messages">
+
+
+                            <img src="image/allc_ac.jpg">
+
+                            <div class="messenger_user_info">
+                                <div class="messenger_user_data">
+
+                                    <p>
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">2022-12-12</font>
+                                        </font>
+                                    </p>
+                                </div>
+                                <p class="user_info_title">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">User 1</font>
+                                    </font>
+                                </p>
+
+                                <p class="user_info_text">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">User 1, User 2, User 3,
+                                            </font>
+                                    </font>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="chat.htm"
+                            class="messenger_user_item alart_messages">
+
+
+                            <img src="image/allc_ac.jpg">
+
+                            <div class="messenger_user_info">
+                                <div class="messenger_user_data">
+
+                                    <p>
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">2022-12-12</font>
+                                        </font>
+                                    </p>
+                                </div>
+                                <p class="user_info_title">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">User 1</font>
+                                    </font>
+                                </p>
+
+                                <p class="user_info_text">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">User 1, User 2, User 3,
+                                            </font>
+                                    </font>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="chat.htm"
+                            class="messenger_user_item alart_messages">
+
+
+                            <img src="image/allc_ac.jpg">
+
+                            <div class="messenger_user_info">
+                                <div class="messenger_user_data">
+
+                                    <p>
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">2022-12-12</font>
+                                        </font>
+                                    </p>
+                                </div>
+                                <p class="user_info_title">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">User 1</font>
+                                    </font>
+                                </p>
+
+                                <p class="user_info_text">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">User 1, User 2, User 3,
+                                            </font>
+                                    </font>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="chat.htm"
+                            class="messenger_user_item alart_messages">
+
+
+                            <img src="image/allc_ac.jpg">
+
+                            <div class="messenger_user_info">
+                                <div class="messenger_user_data">
+
+                                    <p>
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">2022-12-12</font>
+                                        </font>
+                                    </p>
+                                </div>
+                                <p class="user_info_title">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">User 1</font>
+                                    </font>
+                                </p>
+
+                                <p class="user_info_text">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">User 1, User 2, User 3,
+                                            </font>
+                                    </font>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="chat.htm"
+                            class="messenger_user_item alart_messages">
+
+
+                            <img src="image/allc_ac.jpg">
+
+                            <div class="messenger_user_info">
+                                <div class="messenger_user_data">
+
+                                    <p>
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">2022-12-12</font>
+                                        </font>
+                                    </p>
+                                </div>
+                                <p class="user_info_title">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">User 1</font>
+                                    </font>
+                                </p>
+
+                                <p class="user_info_text">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">User 1, User 2, User 3,
+                                            </font>
+                                    </font>
+                                </p>
+                            </div>
+                        </a>
+                        <a href="chat.htm"
+                        class="messenger_user_item alart_messages">
+
+
+                        <img src="image/allc_ac.jpg">
+
+                        <div class="messenger_user_info">
+                            <div class="messenger_user_data">
+
+                                <p>
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">2022-12-12</font>
+                                    </font>
+                                </p>
+                            </div>
+                            <p class="user_info_title">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">User 1</font>
+                                </font>
+                            </p>
+
+                            <p class="user_info_text">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">User 1, User 2, User 3,
+                                        </font>
+                                </font>
+                            </p>
+                        </div>
+                    </a>
+                    <a href="chat.htm"
+                        class="messenger_user_item alart_messages">
+
+
+                        <img src="image/allc_ac.jpg">
+
+                        <div class="messenger_user_info">
+                            <div class="messenger_user_data">
+
+                                <p>
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">2022-12-12</font>
+                                    </font>
+                                </p>
+                            </div>
+                            <p class="user_info_title">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">User 1</font>
+                                </font>
+                            </p>
+
+                            <p class="user_info_text">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">User 1, User 2, User 3,
+                                        </font>
+                                </font>
+                            </p>
+                        </div>
+                    </a>
+                    <a href="chat.htm"
+                        class="messenger_user_item alart_messages">
+
+
+                        <img src="image/allc_ac.jpg">
+
+                        <div class="messenger_user_info">
+                            <div class="messenger_user_data">
+
+                                <p>
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">2022-12-12</font>
+                                    </font>
+                                </p>
+                            </div>
+                            <p class="user_info_title">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">User 1</font>
+                                </font>
+                            </p>
+
+                            <p class="user_info_text">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">User 1, User 2, User 3,
+                                        </font>
+                                </font>
+                            </p>
+                        </div>
+                    </a>
+                    <a href="chat.htm"
+                        class="messenger_user_item alart_messages">
+
+
+                        <img src="image/allc_ac.jpg">
+
+                        <div class="messenger_user_info">
+                            <div class="messenger_user_data">
+
+                                <p>
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">2022-12-12</font>
+                                    </font>
+                                </p>
+                            </div>
+                            <p class="user_info_title">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">User 1</font>
+                                </font>
+                            </p>
+
+                            <p class="user_info_text">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">User 1, User 2, User 3,
+                                        </font>
+                                </font>
+                            </p>
+                        </div>
+                    </a>
+
+                      </a>
                         <a
                             href="/cabinet/chat/20e8b024-cd27-4b85-9351-a2d0bd7a9c60/e153347b-3743-42d6-9cdb-163c4bec3b8c/?roomsCount=40&amp;q=&amp;filter=">
 
                         </a>
 
                     </div>
+
+
+
                 </div>
                 <div class="messenger_right">
                     <div class="messenger_right_wrap">
@@ -428,56 +859,19 @@
                             </label>
                             <div class="messenger_right_top">
                                 
-                                
-                                
+
                                 <img src="image/allc_ac.jpg" alt="user">
                                 
-                                
-                                
-    
-                                
-                                
-    
-                                
+
     
                                 <div class="messenger_right_info messenger_right_info_3">
                                     <p class="messenger_right_title">Приветвую коллеги</p>
-                                    <p class="messenger_right_text">Админ, organic54, Сотрудник, Сотрудник, Love Shop, Сотрудник</p>
-                                
-                              
-
+                                    <p class="messenger_right_text">User 1, User 2, User 3...</p>
+                                </div>
 
                                 
-                                    
-                                
 
-                            </div>
-
-                        
-
-
-
-
-                                
-                                    
-                                   
-                               
-
-
-
-
-
-                            
-
-
-
-
-
-
-
-
-
-                                <div class="messenger_top_setting">
+    <div class="messenger_top_setting">
                                     <label for="agree-leave" class="messenger_top_item">
                                         <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_1605_25236)">
@@ -515,7 +909,7 @@
             </div>
             
         
-        <a href="http://fhkjgxwtcw7dq56i5mkanw3hkxonfm6g6hgfkzgzg2desiqckk7ozlid.onion/chat/e839af63-0a8f-4cdd-aa16-96b3b0df7784/?roomsCount=1&amp;messagesCount=100&amp;q=">
+        <a href="/chat/e839af63-0a8f-4cdd-aa16-96b3b0df7784/?roomsCount=1&amp;messagesCount=100&amp;q=">
             
         </a>
     
@@ -735,8 +1129,6 @@
                             <p class="form_rights_label">Тема группы</p>
                             <input type="text" placeholder="Тема группы" required="" value="" name="user_display_name">
                         </div>
-
-
                         <div class="list_buyers">
                             
                             
@@ -792,713 +1184,9 @@
                                             <p>Уведомления</p>
                                         </label>
                                     </div>      
-
-
-                            </div>
+ </div>
                         </div>
 
-                        <div class="rights_checkbox_wrap products_list" style="display: none;">
-                            <p class="rights_checkbox_title">Разрешение на отдельные товары</p>
-                            <div class="rights_checkbox_box">
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="product_d1f38c6b-3f19-4472-8077-8abc1b022e28" name="product_d1f38c6b-3f19-4472-8077-8abc1b022e28" value="on" class="product_checkbox" checked="checked">
-                                        <label for="product_d1f38c6b-3f19-4472-8077-8abc1b022e28">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Альфа-пвп</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="product_0d83259f-9781-440c-b915-6755cad85db0" name="product_0d83259f-9781-440c-b915-6755cad85db0" value="on" class="product_checkbox" checked="checked">
-                                        <label for="product_0d83259f-9781-440c-b915-6755cad85db0">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Гашиш</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="product_f4c0e5f4-3540-4144-9bab-18c542d173c3" name="product_f4c0e5f4-3540-4144-9bab-18c542d173c3" value="on" class="product_checkbox" checked="checked">
-                                        <label for="product_f4c0e5f4-3540-4144-9bab-18c542d173c3">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Гашишное-масло</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="product_04054bee-b7da-42eb-aaee-ea4e7538ade7" name="product_04054bee-b7da-42eb-aaee-ea4e7538ade7" value="on" class="product_checkbox" checked="checked">
-                                        <label for="product_04054bee-b7da-42eb-aaee-ea4e7538ade7">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Мефедрон Кристаллы 💎💎💎</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="product_e795bda9-a750-4965-a8fa-d275ffbe097c" name="product_e795bda9-a750-4965-a8fa-d275ffbe097c" value="on" class="product_checkbox" checked="checked">
-                                        <label for="product_e795bda9-a750-4965-a8fa-d275ffbe097c">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Мефедрон Мука 😍😍😍</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="product_50472a05-67b1-49f9-ac0e-55210924255e" name="product_50472a05-67b1-49f9-ac0e-55210924255e" value="on" class="product_checkbox" checked="checked">
-                                        <label for="product_50472a05-67b1-49f9-ac0e-55210924255e">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Шишки</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="product_1d134672-3f60-4d3a-9083-283ccd4437e1" name="product_1d134672-3f60-4d3a-9083-283ccd4437e1" value="on" class="product_checkbox" checked="checked">
-                                        <label for="product_1d134672-3f60-4d3a-9083-283ccd4437e1">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Экстази</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="product_9217f605-6dae-45ba-930c-c7f105d23555" name="product_9217f605-6dae-45ba-930c-c7f105d23555" value="on" class="product_checkbox" checked="checked">
-                                        <label for="product_9217f605-6dae-45ba-930c-c7f105d23555">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>🥇Курьер🥇</p>
-                                        </label>
-                                    </div>
-                                
-                            </div>
-                        </div>
-                        <div class="rights_checkbox_wrap cities_list" style="display: none;">
-                            <p class="rights_checkbox_title">Разрешение на отдельные города</p>
-                            <div class="rights_checkbox_box">
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_94b989ae-c55c-405d-b7db-a8d9497d9cb6" name="region_94b989ae-c55c-405d-b7db-a8d9497d9cb6" class="city_checkbox" checked="checked">
-                                        <label for="region_94b989ae-c55c-405d-b7db-a8d9497d9cb6">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Адлер (Краснодарский край)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_94b989ae-c55c-405d-b7db-a8d9497d9cb6" name="region_94b989ae-c55c-405d-b7db-a8d9497d9cb6" class="city_checkbox" checked="checked">
-                                        <label for="region_94b989ae-c55c-405d-b7db-a8d9497d9cb6">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Адлер (Краснодарский край)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_94b989ae-c55c-405d-b7db-a8d9497d9cb6" name="region_94b989ae-c55c-405d-b7db-a8d9497d9cb6" class="city_checkbox" checked="checked">
-                                        <label for="region_94b989ae-c55c-405d-b7db-a8d9497d9cb6">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Адлер (Краснодарский край)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_94b989ae-c55c-405d-b7db-a8d9497d9cb6" name="region_94b989ae-c55c-405d-b7db-a8d9497d9cb6" class="city_checkbox" checked="checked">
-                                        <label for="region_94b989ae-c55c-405d-b7db-a8d9497d9cb6">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Адлер (Краснодарский край)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_44194a5f-23c3-471c-afdc-afc3af21cfe5" name="region_44194a5f-23c3-471c-afdc-afc3af21cfe5" class="city_checkbox" checked="checked">
-                                        <label for="region_44194a5f-23c3-471c-afdc-afc3af21cfe5">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Благовещенск (Амурская область)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_44194a5f-23c3-471c-afdc-afc3af21cfe5" name="region_44194a5f-23c3-471c-afdc-afc3af21cfe5" class="city_checkbox" checked="checked">
-                                        <label for="region_44194a5f-23c3-471c-afdc-afc3af21cfe5">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Благовещенск (Амурская область)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_44194a5f-23c3-471c-afdc-afc3af21cfe5" name="region_44194a5f-23c3-471c-afdc-afc3af21cfe5" class="city_checkbox" checked="checked">
-                                        <label for="region_44194a5f-23c3-471c-afdc-afc3af21cfe5">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Благовещенск (Амурская область)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_44194a5f-23c3-471c-afdc-afc3af21cfe5" name="region_44194a5f-23c3-471c-afdc-afc3af21cfe5" class="city_checkbox" checked="checked">
-                                        <label for="region_44194a5f-23c3-471c-afdc-afc3af21cfe5">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Благовещенск (Амурская область)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_8f1cf311-455f-419c-8677-4e4612c9970c" name="region_8f1cf311-455f-419c-8677-4e4612c9970c" class="city_checkbox" checked="checked">
-                                        <label for="region_8f1cf311-455f-419c-8677-4e4612c9970c">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Владивосток (Приморский край)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_8f1cf311-455f-419c-8677-4e4612c9970c" name="region_8f1cf311-455f-419c-8677-4e4612c9970c" class="city_checkbox" checked="checked">
-                                        <label for="region_8f1cf311-455f-419c-8677-4e4612c9970c">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Владивосток (Приморский край)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_8f1cf311-455f-419c-8677-4e4612c9970c" name="region_8f1cf311-455f-419c-8677-4e4612c9970c" class="city_checkbox" checked="checked">
-                                        <label for="region_8f1cf311-455f-419c-8677-4e4612c9970c">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Владивосток (Приморский край)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_8f1cf311-455f-419c-8677-4e4612c9970c" name="region_8f1cf311-455f-419c-8677-4e4612c9970c" class="city_checkbox" checked="checked">
-                                        <label for="region_8f1cf311-455f-419c-8677-4e4612c9970c">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Владивосток (Приморский край)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_535ebb27-5e6d-4c6e-8dcd-5be950f6c8dd" name="region_535ebb27-5e6d-4c6e-8dcd-5be950f6c8dd" class="city_checkbox" checked="checked">
-                                        <label for="region_535ebb27-5e6d-4c6e-8dcd-5be950f6c8dd">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Иркутск (Иркутская область)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_535ebb27-5e6d-4c6e-8dcd-5be950f6c8dd" name="region_535ebb27-5e6d-4c6e-8dcd-5be950f6c8dd" class="city_checkbox" checked="checked">
-                                        <label for="region_535ebb27-5e6d-4c6e-8dcd-5be950f6c8dd">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Иркутск (Иркутская область)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_535ebb27-5e6d-4c6e-8dcd-5be950f6c8dd" name="region_535ebb27-5e6d-4c6e-8dcd-5be950f6c8dd" class="city_checkbox" checked="checked">
-                                        <label for="region_535ebb27-5e6d-4c6e-8dcd-5be950f6c8dd">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Иркутск (Иркутская область)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_535ebb27-5e6d-4c6e-8dcd-5be950f6c8dd" name="region_535ebb27-5e6d-4c6e-8dcd-5be950f6c8dd" class="city_checkbox" checked="checked">
-                                        <label for="region_535ebb27-5e6d-4c6e-8dcd-5be950f6c8dd">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Иркутск (Иркутская область)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_cf47f6ef-d588-494f-b145-b91d11db45b2" name="region_cf47f6ef-d588-494f-b145-b91d11db45b2" class="city_checkbox" checked="checked">
-                                        <label for="region_cf47f6ef-d588-494f-b145-b91d11db45b2">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Казань (Республика Татарстан)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_cf47f6ef-d588-494f-b145-b91d11db45b2" name="region_cf47f6ef-d588-494f-b145-b91d11db45b2" class="city_checkbox" checked="checked">
-                                        <label for="region_cf47f6ef-d588-494f-b145-b91d11db45b2">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Казань (Республика Татарстан)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_cf47f6ef-d588-494f-b145-b91d11db45b2" name="region_cf47f6ef-d588-494f-b145-b91d11db45b2" class="city_checkbox" checked="checked">
-                                        <label for="region_cf47f6ef-d588-494f-b145-b91d11db45b2">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Казань (Республика Татарстан)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_cf47f6ef-d588-494f-b145-b91d11db45b2" name="region_cf47f6ef-d588-494f-b145-b91d11db45b2" class="city_checkbox" checked="checked">
-                                        <label for="region_cf47f6ef-d588-494f-b145-b91d11db45b2">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Казань (Республика Татарстан)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_ecafbce1-73d7-43af-9d48-3104d7129e2c" name="region_ecafbce1-73d7-43af-9d48-3104d7129e2c" class="city_checkbox" checked="checked">
-                                        <label for="region_ecafbce1-73d7-43af-9d48-3104d7129e2c">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Комсомольск-на-Амуре (Хабаровский край)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_ecafbce1-73d7-43af-9d48-3104d7129e2c" name="region_ecafbce1-73d7-43af-9d48-3104d7129e2c" class="city_checkbox" checked="checked">
-                                        <label for="region_ecafbce1-73d7-43af-9d48-3104d7129e2c">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Комсомольск-на-Амуре (Хабаровский край)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_ecafbce1-73d7-43af-9d48-3104d7129e2c" name="region_ecafbce1-73d7-43af-9d48-3104d7129e2c" class="city_checkbox" checked="checked">
-                                        <label for="region_ecafbce1-73d7-43af-9d48-3104d7129e2c">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Комсомольск-на-Амуре (Хабаровский край)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_ecafbce1-73d7-43af-9d48-3104d7129e2c" name="region_ecafbce1-73d7-43af-9d48-3104d7129e2c" class="city_checkbox" checked="checked">
-                                        <label for="region_ecafbce1-73d7-43af-9d48-3104d7129e2c">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Комсомольск-на-Амуре (Хабаровский край)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_fef154eb-5300-46d7-916e-f60e6a1d193e" name="region_fef154eb-5300-46d7-916e-f60e6a1d193e" class="city_checkbox" checked="checked">
-                                        <label for="region_fef154eb-5300-46d7-916e-f60e6a1d193e">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Москва</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_fef154eb-5300-46d7-916e-f60e6a1d193e" name="region_fef154eb-5300-46d7-916e-f60e6a1d193e" class="city_checkbox" checked="checked">
-                                        <label for="region_fef154eb-5300-46d7-916e-f60e6a1d193e">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Москва</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_fef154eb-5300-46d7-916e-f60e6a1d193e" name="region_fef154eb-5300-46d7-916e-f60e6a1d193e" class="city_checkbox" checked="checked">
-                                        <label for="region_fef154eb-5300-46d7-916e-f60e6a1d193e">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Москва</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_fef154eb-5300-46d7-916e-f60e6a1d193e" name="region_fef154eb-5300-46d7-916e-f60e6a1d193e" class="city_checkbox" checked="checked">
-                                        <label for="region_fef154eb-5300-46d7-916e-f60e6a1d193e">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Москва</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_5c0d690f-9d3b-40b8-8a6d-40cab30aacbe" name="region_5c0d690f-9d3b-40b8-8a6d-40cab30aacbe" class="city_checkbox" checked="checked">
-                                        <label for="region_5c0d690f-9d3b-40b8-8a6d-40cab30aacbe">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Набережные Челны (Республика Татарстан)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_0b308c80-7235-470d-93d6-d98fa3a94164" name="region_0b308c80-7235-470d-93d6-d98fa3a94164" class="city_checkbox" checked="checked">
-                                        <label for="region_0b308c80-7235-470d-93d6-d98fa3a94164">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Находка (Приморский край)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_0b308c80-7235-470d-93d6-d98fa3a94164" name="region_0b308c80-7235-470d-93d6-d98fa3a94164" class="city_checkbox" checked="checked">
-                                        <label for="region_0b308c80-7235-470d-93d6-d98fa3a94164">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Находка (Приморский край)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_0b308c80-7235-470d-93d6-d98fa3a94164" name="region_0b308c80-7235-470d-93d6-d98fa3a94164" class="city_checkbox" checked="checked">
-                                        <label for="region_0b308c80-7235-470d-93d6-d98fa3a94164">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Находка (Приморский край)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_0b308c80-7235-470d-93d6-d98fa3a94164" name="region_0b308c80-7235-470d-93d6-d98fa3a94164" class="city_checkbox" checked="checked">
-                                        <label for="region_0b308c80-7235-470d-93d6-d98fa3a94164">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Находка (Приморский край)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_7d2e5fd1-cebe-4389-82ab-17a7cd5387a0" name="region_7d2e5fd1-cebe-4389-82ab-17a7cd5387a0" class="city_checkbox" checked="checked">
-                                        <label for="region_7d2e5fd1-cebe-4389-82ab-17a7cd5387a0">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Нерюнгри (Республика саха)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_7d2e5fd1-cebe-4389-82ab-17a7cd5387a0" name="region_7d2e5fd1-cebe-4389-82ab-17a7cd5387a0" class="city_checkbox" checked="checked">
-                                        <label for="region_7d2e5fd1-cebe-4389-82ab-17a7cd5387a0">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Нерюнгри (Республика саха)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_7d2e5fd1-cebe-4389-82ab-17a7cd5387a0" name="region_7d2e5fd1-cebe-4389-82ab-17a7cd5387a0" class="city_checkbox" checked="checked">
-                                        <label for="region_7d2e5fd1-cebe-4389-82ab-17a7cd5387a0">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Нерюнгри (Республика саха)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_7d2e5fd1-cebe-4389-82ab-17a7cd5387a0" name="region_7d2e5fd1-cebe-4389-82ab-17a7cd5387a0" class="city_checkbox" checked="checked">
-                                        <label for="region_7d2e5fd1-cebe-4389-82ab-17a7cd5387a0">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Нерюнгри (Республика саха)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_59f6af22-6375-4664-a1b7-34392b6b678c" name="region_59f6af22-6375-4664-a1b7-34392b6b678c" class="city_checkbox" checked="checked">
-                                        <label for="region_59f6af22-6375-4664-a1b7-34392b6b678c">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Новосибирск (Новосибирская область)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_59f6af22-6375-4664-a1b7-34392b6b678c" name="region_59f6af22-6375-4664-a1b7-34392b6b678c" class="city_checkbox" checked="checked">
-                                        <label for="region_59f6af22-6375-4664-a1b7-34392b6b678c">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Новосибирск (Новосибирская область)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_59f6af22-6375-4664-a1b7-34392b6b678c" name="region_59f6af22-6375-4664-a1b7-34392b6b678c" class="city_checkbox" checked="checked">
-                                        <label for="region_59f6af22-6375-4664-a1b7-34392b6b678c">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Новосибирск (Новосибирская область)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_59f6af22-6375-4664-a1b7-34392b6b678c" name="region_59f6af22-6375-4664-a1b7-34392b6b678c" class="city_checkbox" checked="checked">
-                                        <label for="region_59f6af22-6375-4664-a1b7-34392b6b678c">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Новосибирск (Новосибирская область)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_e9c93bc3-ed94-40a8-ab5f-aaf19eadb49e" name="region_e9c93bc3-ed94-40a8-ab5f-aaf19eadb49e" class="city_checkbox" checked="checked">
-                                        <label for="region_e9c93bc3-ed94-40a8-ab5f-aaf19eadb49e">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Улан-Удэ (Республика Бурятия)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_e9c93bc3-ed94-40a8-ab5f-aaf19eadb49e" name="region_e9c93bc3-ed94-40a8-ab5f-aaf19eadb49e" class="city_checkbox" checked="checked">
-                                        <label for="region_e9c93bc3-ed94-40a8-ab5f-aaf19eadb49e">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Улан-Удэ (Республика Бурятия)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_e9c93bc3-ed94-40a8-ab5f-aaf19eadb49e" name="region_e9c93bc3-ed94-40a8-ab5f-aaf19eadb49e" class="city_checkbox" checked="checked">
-                                        <label for="region_e9c93bc3-ed94-40a8-ab5f-aaf19eadb49e">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Улан-Удэ (Республика Бурятия)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_e9c93bc3-ed94-40a8-ab5f-aaf19eadb49e" name="region_e9c93bc3-ed94-40a8-ab5f-aaf19eadb49e" class="city_checkbox" checked="checked">
-                                        <label for="region_e9c93bc3-ed94-40a8-ab5f-aaf19eadb49e">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Улан-Удэ (Республика Бурятия)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_00e40f6b-75b8-4281-ac6c-f633ed4baee2" name="region_00e40f6b-75b8-4281-ac6c-f633ed4baee2" class="city_checkbox" checked="checked">
-                                        <label for="region_00e40f6b-75b8-4281-ac6c-f633ed4baee2">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Уссурийск (Приморский край)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_00e40f6b-75b8-4281-ac6c-f633ed4baee2" name="region_00e40f6b-75b8-4281-ac6c-f633ed4baee2" class="city_checkbox" checked="checked">
-                                        <label for="region_00e40f6b-75b8-4281-ac6c-f633ed4baee2">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Уссурийск (Приморский край)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_00e40f6b-75b8-4281-ac6c-f633ed4baee2" name="region_00e40f6b-75b8-4281-ac6c-f633ed4baee2" class="city_checkbox" checked="checked">
-                                        <label for="region_00e40f6b-75b8-4281-ac6c-f633ed4baee2">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Уссурийск (Приморский край)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_00e40f6b-75b8-4281-ac6c-f633ed4baee2" name="region_00e40f6b-75b8-4281-ac6c-f633ed4baee2" class="city_checkbox" checked="checked">
-                                        <label for="region_00e40f6b-75b8-4281-ac6c-f633ed4baee2">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Уссурийск (Приморский край)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_330e6e45-85e5-43ec-a0b1-500fd9d88dd7" name="region_330e6e45-85e5-43ec-a0b1-500fd9d88dd7" class="city_checkbox" checked="checked">
-                                        <label for="region_330e6e45-85e5-43ec-a0b1-500fd9d88dd7">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Хабаровск (Хабаровский край)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_330e6e45-85e5-43ec-a0b1-500fd9d88dd7" name="region_330e6e45-85e5-43ec-a0b1-500fd9d88dd7" class="city_checkbox" checked="checked">
-                                        <label for="region_330e6e45-85e5-43ec-a0b1-500fd9d88dd7">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Хабаровск (Хабаровский край)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_330e6e45-85e5-43ec-a0b1-500fd9d88dd7" name="region_330e6e45-85e5-43ec-a0b1-500fd9d88dd7" class="city_checkbox" checked="checked">
-                                        <label for="region_330e6e45-85e5-43ec-a0b1-500fd9d88dd7">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Хабаровск (Хабаровский край)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_330e6e45-85e5-43ec-a0b1-500fd9d88dd7" name="region_330e6e45-85e5-43ec-a0b1-500fd9d88dd7" class="city_checkbox" checked="checked">
-                                        <label for="region_330e6e45-85e5-43ec-a0b1-500fd9d88dd7">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Хабаровск (Хабаровский край)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_1de42345-ab1d-4484-80a5-2b04981e0d6b" name="region_1de42345-ab1d-4484-80a5-2b04981e0d6b" class="city_checkbox" checked="checked">
-                                        <label for="region_1de42345-ab1d-4484-80a5-2b04981e0d6b">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Чита (Забайкальский край)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_1de42345-ab1d-4484-80a5-2b04981e0d6b" name="region_1de42345-ab1d-4484-80a5-2b04981e0d6b" class="city_checkbox" checked="checked">
-                                        <label for="region_1de42345-ab1d-4484-80a5-2b04981e0d6b">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Чита (Забайкальский край)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_1de42345-ab1d-4484-80a5-2b04981e0d6b" name="region_1de42345-ab1d-4484-80a5-2b04981e0d6b" class="city_checkbox" checked="checked">
-                                        <label for="region_1de42345-ab1d-4484-80a5-2b04981e0d6b">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Чита (Забайкальский край)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_1de42345-ab1d-4484-80a5-2b04981e0d6b" name="region_1de42345-ab1d-4484-80a5-2b04981e0d6b" class="city_checkbox" checked="checked">
-                                        <label for="region_1de42345-ab1d-4484-80a5-2b04981e0d6b">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Чита (Забайкальский край)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_bf208a0b-94f6-43c9-b0c0-8ab535432d53" name="region_bf208a0b-94f6-43c9-b0c0-8ab535432d53" class="city_checkbox" checked="checked">
-                                        <label for="region_bf208a0b-94f6-43c9-b0c0-8ab535432d53">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Южно-Сахалинск (Сахалинская область)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_bf208a0b-94f6-43c9-b0c0-8ab535432d53" name="region_bf208a0b-94f6-43c9-b0c0-8ab535432d53" class="city_checkbox" checked="checked">
-                                        <label for="region_bf208a0b-94f6-43c9-b0c0-8ab535432d53">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Южно-Сахалинск (Сахалинская область)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_bf208a0b-94f6-43c9-b0c0-8ab535432d53" name="region_bf208a0b-94f6-43c9-b0c0-8ab535432d53" class="city_checkbox" checked="checked">
-                                        <label for="region_bf208a0b-94f6-43c9-b0c0-8ab535432d53">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Южно-Сахалинск (Сахалинская область)</p>
-                                        </label>
-                                    </div>
-                                
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="region_bf208a0b-94f6-43c9-b0c0-8ab535432d53" name="region_bf208a0b-94f6-43c9-b0c0-8ab535432d53" class="city_checkbox" checked="checked">
-                                        <label for="region_bf208a0b-94f6-43c9-b0c0-8ab535432d53">
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
-                                            </svg>
-                                            <p>Южно-Сахалинск (Сахалинская область)</p>
-                                        </label>
-                                    </div>
-                                
-                            </div>
-                        </div>
                         <button type="submit" class="form_rights_btn">Сохранить</button>
                     </form>
                 </div>
@@ -1506,24 +1194,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
         </div>
     </div>
 </div>   
