@@ -7834,7 +7834,7 @@ input#close-info {
     display: flex;
     align-items: center;
     right: 10px;
-    top: 0
+    top: auto;
 }
 
 .user_info_text,
