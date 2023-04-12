@@ -7706,7 +7706,7 @@ input#close-info {
     box-shadow: 0 2px 35px rgba(0, 0, 0, .3);
     border-radius: 10px;
     top: 50%;
-    left: 50%;
+    left: 45%;
     z-index: 999;
     transform: translate(-50%, -50%)
 }
