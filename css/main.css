@@ -9528,7 +9528,7 @@ input[type=number]:hover {
     .messenger_modal_error,
     .messenger_modal_info,
     .messenger_modal_leave {
-        /*width: calc(100% - 20px) */
+        width: calc(80% - 3px)
     }
 
     .messenger_modal_error .messenger_add_top,
