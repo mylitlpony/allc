@@ -910,6 +910,16 @@ header .header-container-child .account-block .account-money {
     text-decoration: none
 }
 
+header .header-container-child .account-block .account-notification {
+    position: relative;
+    height: 22px;
+    margin-right: 18px;
+}
+
+header .header-container-child .account-block .account-notification svg {
+    height: 22px;
+}
+
 header .header-container-child .account-block .account-mail {
     height: 18px;
     margin-right: 18px
@@ -918,6 +928,22 @@ header .header-container-child .account-block .account-mail {
 .filter_main_mob label,
 header .header-container-child .account-block .account-mail svg {
     height: 18px
+}
+
+header .header-container-child .account-block .count {
+    min-width: 16px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: -8px;
+    top: -8px;
+    padding: 0 2px;
+    font: 400 9px/11px "Inter", sans-serif;
+    color: #000;
+    text-decoration: none;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background: #fff;
 }
 
 header .menu-burger {
@@ -7852,11 +7878,19 @@ input#close-info {
 }
 
 .messenger_user_data span {
-    margin: 0 5px 0 0;
-    height: 7px;
-    width: 7px;
-    background: #000;
-    border-radius: 50%
+    min-width: 16px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: -8px;
+    top: -8px;
+    padding: 0 2px;
+    font: 400 9px/11px "Inter", sans-serif;
+    color: #000;
+    text-decoration: none;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    background: #fff;
 }
 
 .messenger_user_item img {
