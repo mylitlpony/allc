@@ -304,7 +304,18 @@ header .header-container-child .logo svg {
 .review_top .shop_panel_img {
     height: 60px
 }
+.login-container .logo-404 svg
+{
+    display: table;
+    font-family: sans-serif;
+    height: 100%;
+    text-align: center;
+    width: 100%;
 
+    vertical-align: middle;
+    border-radius: 10px;
+    margin: 10px 0
+}
 .login-container .authorization-block__title {
     margin-bottom: 16px;
     font-family: Inter, sans-serif;
@@ -1603,7 +1614,7 @@ html {
         flex-direction: column
     }
 
-    .messenger_more {
+    .messenger_more_accept {
         color: #000;
         margin-top: 10px
     }
@@ -2266,6 +2277,7 @@ html {
 .sort_box.active,
 .sort_wrap input[type=checkbox]:checked~.sort_box,
 input#agree-leave:checked+.messenger_modal_leave,
+input#agree-exit:checked+.messenger_modal_leave,
 input#close-error:checked+.messenger_modal_error,
 input#close-info:checked+.messenger_modal_info {
     display: block
@@ -6490,6 +6502,8 @@ select {
     border: 1px solid #000
 }
 
+
+
 .lk_item_box {
     padding: 14px;
     border-bottom: 1px solid #ebebeb;
@@ -6731,6 +6745,7 @@ select {
 .sale_group .sale_table .lk_table_item p:first-child::before,
 .services_main .lk_table_item p:first-child::before,
 input#agree-leave,
+input#agree-exit,
 input#close-error,
 input#close-info {
     display: none
