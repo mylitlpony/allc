@@ -333,28 +333,204 @@
 
 
 <div class="category_main">
+
     <div class="container">
 
         <div class="category_main_wrap">
-            <div class="category_sidebar">
+            <input type="checkbox" id="filter_main">
+            <div class="category_sidebar filter_main">
                 <p class="category_title">Каталог</p>
+                <div class="catalog_back_btn">
+                    <a href="/catalog/?p=1&amp;a=z&amp;sort=price_asc">
+                        <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.66577 9.68655C5.79564 9.68959 5.92318 9.64943 6.03066 9.57159C6.13813 9.49374 6.22019 9.38206 6.26544 9.25217C6.31068 9.12227 6.31686 8.98059 6.28312 8.84678C6.24937 8.71297 6.17738 8.59375 6.07714 8.5056L2.25268 5.01081L6.07714 1.51725C6.14648 1.4629 6.20455 1.39389 6.24771 1.31448C6.29087 1.23508 6.3182 1.147 6.32798 1.05581C6.33776 0.964618 6.32979 0.872275 6.30455 0.784524C6.27932 0.696774 6.23737 0.6155 6.18134 0.545843C6.1253 0.476186 6.05639 0.419682 5.97891 0.379751C5.90143 0.339819 5.81705 0.317391 5.73107 0.313852C5.64508 0.310313 5.55934 0.325697 5.47921 0.359143C5.39907 0.392588 5.32628 0.44332 5.26538 0.508165L0.886715 4.5043C0.817953 4.5669 0.762737 4.64459 0.724875 4.73214C0.687014 4.8197 0.667407 4.915 0.667407 5.01142C0.667407 5.10785 0.687013 5.20315 0.724875 5.29071C0.762737 5.37826 0.817953 5.45603 0.886715 5.51862L5.26538 9.51861C5.37599 9.62341 5.51786 9.68299 5.66577 9.6867L5.66577 9.68655Z" fill="black"></path>
+                        </svg>
+                        Все категории
+                    </a>
+                </div>
                 <div class="category_sidebar_wrap">
+                    <div class="category_sidebar_box inside_cat">
+                        <a href="/catalog/5dfb57e0-05fb-4db4-9149-010bf33acee5/?p=1&amp;a=z&amp;sort=price_asc" class="category_sidebar_title">Химические реактивы</a>
+                        <ul class="category_sidebar_link">
+                            
+                                <li><a href="/catalog/5dfb57e0-05fb-4db4-9149-010bf33acee5/5a91a15b-48da-4af8-a9de-aa90fbf635cf/?p=1&amp;a=z&amp;sort=price_asc" class="active_link">Бензол</a></li>
+                            
+
+                        </ul>
+                    </div>
                     
-                        <div class="category_sidebar_box">
-                            <a href="" class="category_sidebar_title">
-                                Химические реактивы:
-                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.33423 0.813638C1.20436 0.810591 1.07682 0.850751 0.969343 0.928596C0.861871 1.00644 0.779808 1.11812 0.734562 1.24802C0.689317 1.37791 0.683137 1.51959 0.716883 1.6534C0.750629 1.78722 0.822623 1.90644 0.922856 1.99459L4.74732 5.48937L0.922856 8.98293C0.85352 9.03729 0.795452 9.1063 0.75229 9.1857C0.709128 9.2651 0.681801 9.35318 0.67202 9.44437C0.662239 9.53557 0.670215 9.62791 0.695449 9.71566C0.720683 9.80341 0.762631 9.88468 0.818666 9.95434C0.8747 10.024 0.943615 10.0805 1.02109 10.1204C1.09857 10.1604 1.18295 10.1828 1.26893 10.1863C1.35492 10.1899 1.44066 10.1745 1.52079 10.141C1.60093 10.1076 1.67372 10.0569 1.73462 9.99202L6.11329 5.99588C6.18205 5.93329 6.23726 5.8556 6.27513 5.76804C6.31299 5.68048 6.33259 5.58518 6.33259 5.48876C6.33259 5.39233 6.31299 5.29703 6.27513 5.20948C6.23726 5.12192 6.18205 5.04415 6.11329 4.98156L1.73462 0.981576C1.62401 0.876777 1.48214 0.817197 1.33423 0.813484V0.813638Z" fill="black"></path>
-                                </svg>
-                            </a>
-                            <ul class="category_sidebar_link">
-                                
-                                    <li><a href="">Бензол</a></li>
-                            </ul>
-                        </div>
+    
+    <div class="filter_main_mob">
+        <p>Фильтр</p>
+        <label for="filter_main" class="close_filter">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.4971 9.0001L17.6895 1.80773C18.1035 1.39375 18.1035 0.724601 17.6895 0.310613C17.2755 -0.103375 16.6064 -0.103375 16.1924 0.310613L9.00002 7.50299L1.80761 0.310613C1.39362 -0.103375 0.724479 -0.103375 0.310491 0.310613C-0.103497 0.724601 -0.103497 1.39375 0.310491 1.80773L7.50286 9.0001L0.310491 16.1925C-0.103497 16.6065 -0.103497 17.2756 0.310491 17.6896C0.516957 17.8961 0.788004 17.9998 1.05905 17.9998C1.3301 17.9998 1.60114 17.896 1.80761 17.6896L8.99998 10.4972L16.1924 17.6896C16.3988 17.8961 16.6699 17.9998 16.9409 17.9998C17.212 17.9998 17.483 17.896 17.6895 17.6896C18.1035 17.2756 18.1035 16.6065 17.6895 16.1925L10.4971 9.0001Z" fill="#B7B7B7"></path>
+            </svg>
+        </label>
+    </div>
+    <form action="./" class="category_filter" method="get">
+        <div class="category_filter_box">
+            <label class="filter_title_box">Город</label>
+            <div class="filter-select__box">
+                <select class="filter-select city_select" name="city" id="city-select">
+                    <option value="any">Любой</option>
+                    
+                        <option value="fef154eb-5300-46d7-916e-f60e6a1d193e">Москва</option>
+                    
+                        <option value="de7d9ada-f405-4695-abf0-a667e7245127">Санкт-Петербург</option>
+                    
+                        <option value="59f6af22-6375-4664-a1b7-34392b6b678c">Новосибирск</option>
+                    
+                        <option value="1fdf871a-7e1f-4043-9d48-8d527b883189">Екатеринбург</option>
                     
 
                     
+                </select>
+            </div>
+        </div>
+        <div class="category_filter_box">
+            <label class="filter_title_box">Район</label>
+            <div class="filter-select__box regions_ajax_nest">
+                <select class="filter-select region-select" name="region" id="region-select">
+                    <option value="" selected="selected">Любой</option>
+                    
+                        <option value="4517bce1-13a8-4527-8e6d-ac2ffbb09083">Аскизская ул.</option>
+                    
+                        <option value="ccad49c3-3d7d-4b08-aee1-1f481ef11bfb">Аэропорт</option>
+                    
+                        <option value="91f1cfcf-8be6-4f0a-a0a2-3b881b08910a">В черте города</option>
+                    
+                        <option value="75b024e2-ec14-4b5a-97a1-21bbb32af154">За городом до 15км</option>
+                    
+                        <option value="87c9c2e6-1993-49a9-8daa-91e6ce99e346">За городом от 15км</option>
+                    
+                        <option value="c708589f-9dc9-40d2-985e-aaa7a3210d83">Самохвал</option>
+                    
+                        <option value="df7ac80f-eab1-496f-985c-5a61bb3b25b0">Советская ул.</option>
+                    
+                        <option value="0f382e96-9e3e-40ee-8c50-7339d249d5b4">Центр</option>
+                    
+                </select>
+            </div>
+        </div>
+        <div class="category_filter_box">
+            <label class="filter_title_box">Метро</label>
+            <div class="filter-select__box subways_ajax_nest">
+                <select class="filter-select subway-select" name="subway" id="subway-select">
+                    <option value="" selected="selected">Любая</option>
+                    
+                </select>
+            </div>
+        </div>
+        <div class="category_filter_box">
+            <p class="filter_title_box">Тип склада</p>
+            <div class="category_checkbox_wrap">
+                
+
+                
+
+                
+                    <div class="checkbox">
+                        <input type="checkbox" id="type_6" name="t_6">
+                        <label for="type_6">
+                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
+                            </svg>
+                            Магазин
+                        </label>
+                    </div>
+                
+
+
+                
+                    <div class="checkbox">
+                        <input type="checkbox" id="type_9" name="t_9">
+                        <label for="type_9">
+                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
+                            </svg>
+                            Склад
+                        </label>
+                    </div>
+                
+            </div>
+        </div>
+        <div class="category_filter_box">
+            <p class="filter_title_box">Тип заказа</p>
+            <div class="category_radio_wrap">
+                <div class="radio">
+                    <input type="radio" id="type_order_2" name="otype" value="1" checked="checked">
+                    <label for="type_order_2">
+                        Моментальный
+                    </label>
+                </div>
+                <div class="radio">
+                    <input type="radio" id="type_order_3" name="otype" value="2">
+                    <label for="type_order_3">
+                        Предзаказ
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="category_filter_box">
+            <p class="filter_title_box">Тип магазина</p>
+            <div class="checkbox">
+                <input type="checkbox" id="crowned_shops_only" name="crowned_shops_only" value="1">
+                <label for="crowned_shops_only">
+                    <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0366 0.763601C13.388 1.11508 13.388 1.68492 13.0366 2.0364L5.83659 9.23639C5.48512 9.58784 4.91527 9.58784 4.5638 9.23639L0.963796 5.63639C0.612328 5.28494 0.612328 4.71508 0.963796 4.3636C1.31527 4.01213 1.88512 4.01213 2.23659 4.3636L5.2002 7.32722L11.7638 0.763601C12.1153 0.412133 12.6851 0.412133 13.0366 0.763601V0.763601Z" fill="white"></path>
+                    </svg>
+                    Только довернные
+                </label>
+            </div>
+        </div>
+        <div class="category_filter_box">
+            <p class="filter_title_box">Цена</p>
+            <div class="category_input_wrap">
+                <div class="category_input_box">
+                    <input placeholder="от" class="num" name="pmin">
+                    <span>руб.</span>
+                </div>
+                <div class="category_input_box">
+                    <input placeholder="до" class="num" name="pmax">
+                    <span>руб.</span>
+                </div>
+            </div>
+        </div>
+        <div class="category_filter_box">
+            <p class="filter_title_box">Количество</p>
+            <div class="filter-select__box">
+                <select class="filter-select" name="unit" id="measure-select">
+                    <option value="0" selected="selected">Все</option>
+                    
+                        <option value="1">мг</option>
+                    
+                        <option value="2">г</option>
+                    
+                        <option value="3">кг</option>
+                    
+                        <option value="4">мл</option>
+                    
+                        <option value="5">л</option>
+                    
+                        <option value="6">шт</option>
+                    
+                </select>
+            </div>
+            <div class="category_input_wrap category_input_wrap_2">
+                <div class="category_input_box">
+                    <input placeholder="от" class="num" name="amin">
+                    <span>шт.</span>
+                </div>
+                <div class="category_input_box">
+                    <input placeholder="до" class="num" name="amax">
+                    <span>шт.</span>
+                </div>
+            </div>
+        </div>
+        <button class="category_filter_btn">Найти</button>
+    </form>
+
                 </div>
             </div>
 
@@ -362,24 +538,90 @@
 
                 <div class="category_search_wrap">
                     <div class="search-container">
-                        <form action="/catalog/" method="get">
-                            <input type="text" placeholder="Поиск по товарам" name="q" value="">
+                        <form action="/catalog/5dfb57e0-05fb-4db4-9149-010bf33acee5/5a91a15b-48da-4af8-a9de-aa90fbf635cf/?p=1&amp;a=z&amp;sort=price_asc" method="get">
+                            <input type="text" placeholder="Поиск по товарам" name="q">
                             <button disabled="disabled">Найти</button>
                         </form>
                     </div>
                 </div>
+                <div class="catalog_panel">
+                    <div class="breadcrumbs">
+                        <a href="/catalog/">Каталог</a>
+                        <a href="/catalog/5dfb57e0-05fb-4db4-9149-010bf33acee5/?p=1&amp;a=z&amp;sort=price_asc">Работа</a>
+                        <span>Курьер</span>
+                    </div>
+                    <div class="catalog_control_wrap">
+                        <p>Сортировка по:</p>
+                        <div class="catalog_select_box">
+                            <input type="checkbox" id="catalog_price_box">
+                            <label class="catalog-label" for="catalog_price_box">
+                                <p>Цена</p>
+                                <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.68636 1.33393C9.68941 1.20405 9.64925 1.07651 9.5714 0.969038C9.49356 0.861566 9.38188 0.779502 9.25198 0.734257C9.12209 0.689011 8.98041 0.682832 8.8466 0.716578C8.71278 0.750323 8.59356 0.822317 8.50541 0.922551L5.01063 4.74701L1.51707 0.92255C1.46271 0.853214 1.3937 0.795146 1.3143 0.751984C1.2349 0.708822 1.14682 0.681495 1.05563 0.671714C0.964435 0.661933 0.872091 0.66991 0.784341 0.695144C0.69659 0.720377 0.615317 0.762325 0.54566 0.81836C0.476003 0.874395 0.419499 0.94331 0.379567 1.02079C0.339636 1.09827 0.317207 1.18264 0.313668 1.26863C0.31013 1.35461 0.325515 1.44036 0.35896 1.52049C0.392405 1.60062 0.443137 1.67342 0.507981 1.73432L4.50412 6.11298C4.56671 6.18174 4.6444 6.23696 4.73196 6.27482C4.81952 6.31268 4.91482 6.33229 5.01124 6.33229C5.10766 6.33229 5.20297 6.31268 5.29052 6.27482C5.37808 6.23696 5.45585 6.18174 5.51844 6.11298L9.51842 1.73432C9.62322 1.62371 9.6828 1.48183 9.68652 1.33393L9.68636 1.33393Z" fill="black"></path>
+                                </svg>
+                            </label>
+                            <div class="catalog_sort_box">
+                                <a href="/catalog/5dfb57e0-05fb-4db4-9149-010bf33acee5/5a91a15b-48da-4af8-a9de-aa90fbf635cf/?a=z&amp;sort=price_asc" class="active">от дешевых к дорогим</a>
+                                <a href="/catalog/5dfb57e0-05fb-4db4-9149-010bf33acee5/5a91a15b-48da-4af8-a9de-aa90fbf635cf/?a=z&amp;sort=price_desc" class="no-active">от дорогих к дешевым</a>
+                            </div>
+                        </div>
+                        <div class="catalog_select_box">
+                            <input type="checkbox" id="catalog_rating_box">
+                            <label class="catalog-label" for="catalog_rating_box">
+                                <p>Рейтинг</p>
+                                <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.68636 1.33393C9.68941 1.20405 9.64925 1.07651 9.5714 0.969038C9.49356 0.861566 9.38188 0.779502 9.25198 0.734257C9.12209 0.689011 8.98041 0.682832 8.8466 0.716578C8.71278 0.750323 8.59356 0.822317 8.50541 0.922551L5.01063 4.74701L1.51707 0.92255C1.46271 0.853214 1.3937 0.795146 1.3143 0.751984C1.2349 0.708822 1.14682 0.681495 1.05563 0.671714C0.964435 0.661933 0.872091 0.66991 0.784341 0.695144C0.69659 0.720377 0.615317 0.762325 0.54566 0.81836C0.476003 0.874395 0.419499 0.94331 0.379567 1.02079C0.339636 1.09827 0.317207 1.18264 0.313668 1.26863C0.31013 1.35461 0.325515 1.44036 0.35896 1.52049C0.392405 1.60062 0.443137 1.67342 0.507981 1.73432L4.50412 6.11298C4.56671 6.18174 4.6444 6.23696 4.73196 6.27482C4.81952 6.31268 4.91482 6.33229 5.01124 6.33229C5.10766 6.33229 5.20297 6.31268 5.29052 6.27482C5.37808 6.23696 5.45585 6.18174 5.51844 6.11298L9.51842 1.73432C9.62322 1.62371 9.6828 1.48183 9.68652 1.33393L9.68636 1.33393Z" fill="black"></path>
+                                </svg>
+                            </label>
+                            <div class="catalog_sort_box">
+                                <a href="/catalog/5dfb57e0-05fb-4db4-9149-010bf33acee5/5a91a15b-48da-4af8-a9de-aa90fbf635cf/?a=z&amp;sort=rate_desc" class="no-active">от высокой оценки к низкой</a>
+                                <a href="/catalog/5dfb57e0-05fb-4db4-9149-010bf33acee5/5a91a15b-48da-4af8-a9de-aa90fbf635cf/?a=z&amp;sort=rate_asc" class="no-active">от низкой оценки к высокой</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="main-menu">
-                    <label for="menu-checkbox" class="call_sidebar btn">
-                        Категории
-                    </label>
+                    <label for="menu-checkbox" class="call_sidebar btn">Курьер</label>
+                </div>
+
+                <div class="mob_panel">
+                    
+                        <label for="filter_main" class="call_filter">Фильтр</label>
+                    
+                    
+                    
+                    <div class="sort_wrap">
+                        <input type="checkbox" id="sort_box">
+                        <label for="sort_box" class="call_sort">Сортировка</label>
+                        <div class="sort_box">
+                            <div class="sort_link">
+                                <a href="/catalog/5dfb57e0-05fb-4db4-9149-010bf33acee5/5a91a15b-48da-4af8-a9de-aa90fbf635cf/?a=z&amp;sort=default">любая</a>
+                                <a href="/catalog/5dfb57e0-05fb-4db4-9149-010bf33acee5/5a91a15b-48da-4af8-a9de-aa90fbf635cf/?a=z&amp;sort=price_asc">от дешевых к дорогим</a>
+                                <a href="/catalog/5dfb57e0-05fb-4db4-9149-010bf33acee5/5a91a15b-48da-4af8-a9de-aa90fbf635cf/?a=z&amp;sort=price_desc">от дорогих к дешевым</a>
+                                <a href="/catalog/5dfb57e0-05fb-4db4-9149-010bf33acee5/5a91a15b-48da-4af8-a9de-aa90fbf635cf/?a=z&amp;sort=rate_desc">от высокой оценки к низкой</a>
+                                <a href="/catalog/5dfb57e0-05fb-4db4-9149-010bf33acee5/5a91a15b-48da-4af8-a9de-aa90fbf635cf/?a=z&amp;sort=rate_asc">от низкой оценки к высокой</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 
     
     <div class="category_product_wrap">
         
-            <a href="benzol.htm" class="product_item">
+            <a href="benzol.htm" class="product_item trusted">
+
+                <div class="trusted-tip">
+                    
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="enable-background:new 0 0 32 32" viewBox="0 0 32 32">
+                                    <path d="M16 0C7.2 0 0 7.2 0 16s7.2 16 16 16 16-7.2 16-16S24.8 0 16 0z" style="fill:#fff"></path>
+            <path class="color-change" d="m23.6 13.6-1.1 5.1h-13l-1.1-5.1c0-.2 0-.5.2-.6.2-.1.4-.2.6 0l3.4 2.1 3-4.8c.1-.2.3-.3.4-.3.2 0 .3.1.5.2L20 15l2.9-2c.2-.1.4-.1.6 0 .1.1.2.4.1.6zM22.3 19.8l-.3 1.6c-.1.3-.3.6-.5.6h-11c-.3 0-.5-.2-.5-.6l-.3-1.6h12.6z" fill="#f50802"></path>
+            <path class="color-change" d="M16 0C7.2 0 0 7.2 0 16s7.2 16 16 16 16-7.2 16-16S24.8 0 16 0zm0 31C7.7 31 1 24.3 1 16S7.7 1 16 1s15 6.7 15 15-6.7 15-15 15z" fill="#f50802"></path>
+                                </svg>
+
+                </div>
+
                 <div class="product_item_img">
                     <img src="image/product.jpg" alt="бензол" loading="lazy" height="200" width="200">
                 </div>
@@ -396,7 +638,26 @@
                     </div>
                 </div>
             </a>
-        
+            <a href="benzol.htm" class="product_item trusted">
+
+
+
+                <div class="product_item_img">
+                    <img src="image/product.jpg" alt="бензол" loading="lazy" height="200" width="200">
+                </div>
+                <p class="product_title">Бензол</p>
+                <p class="product_place">ООО Лабсинтез</p>
+                <div class="product_bottom">
+                    <p class="product_price">от
+                        <strong>2996.00 руб.</strong> / 20.00кг</p>
+                    <div class="product_star">
+                        <span class="product_star_col">4.9</span>
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.8355 4.95918C13.7229 4.61346 13.4244 4.36302 13.0646 4.31056L9.42115 3.7819L7.79162 0.488546C7.47004 -0.162849 6.40257 -0.162849 6.081 0.488546L4.45146 3.7819L0.81667 4.31056C0.457041 4.36287 0.158447 4.61434 0.0467669 4.95918C-0.0657913 5.30489 0.028617 5.68305 0.289155 5.93539L2.92424 8.49261L2.3032 12.1118C2.24216 12.4689 2.38912 12.8309 2.68288 13.0442C2.97767 13.2566 3.36687 13.2843 3.68844 13.1156L6.93594 11.4061L10.1931 13.1156C10.3324 13.189 10.4851 13.2252 10.6367 13.2252C10.8342 13.2252 11.0317 13.1643 11.1997 13.0443C11.4936 12.83 11.6404 12.4691 11.5794 12.112L10.9583 8.49275L13.5934 5.93554C13.8537 5.68392 13.9481 5.30402 13.8355 4.95918Z" fill="#434343"></path>
+                        </svg>
+                    </div>
+                </div>
+            </a>
       
     </div>
 
@@ -409,23 +670,17 @@
             
             
             
-                <a href="/catalog/?p=1" class="pagination-links active">1</a>
+                <a href="/catalog/5dfb57e0-05fb-4db4-9149-010bf33acee5/5a91a15b-48da-4af8-a9de-aa90fbf635cf/?p=1&amp;a=z&amp;sort=price_asc" class="pagination-links active">1</a>
             
-                <a href="/catalog/?p=2" class="pagination-links">2</a>
+                <a href="/catalog/5dfb57e0-05fb-4db4-9149-010bf33acee5/5a91a15b-48da-4af8-a9de-aa90fbf635cf/?p=2&amp;a=z&amp;sort=price_asc" class="pagination-links">2</a>
             
-                <a href="/catalog/?p=3" class="pagination-links">3</a>
+                <a href="/catalog/5dfb57e0-05fb-4db4-9149-010bf33acee5/5a91a15b-48da-4af8-a9de-aa90fbf635cf/?p=3&amp;a=z&amp;sort=price_asc" class="pagination-links">3</a>
             
-                <a href="/catalog/?p=4" class="pagination-links">4</a>
             
-                
 
-            <span>...</span>
-
-            <a href="/catalog/?p=365" class="pagination-links">
-                <span>365</span>
-            </a>
+            
         </div>
-        <a href="/catalog/?p=2" class="next-page">
+        <a href="/catalog/5dfb57e0-05fb-4db4-9149-010bf33acee5/5a91a15b-48da-4af8-a9de-aa90fbf635cf/?p=2&amp;a=z&amp;sort=price_asc" class="next-page">
             <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.33399 0.313455C1.20411 0.310408 1.07657 0.350568 0.969099 0.428412C0.861627 0.506257 0.779564 0.61794 0.734318 0.747833C0.689072 0.877726 0.682893 1.01941 0.716639 1.15322C0.750384 1.28703 0.822378 1.40625 0.922612 1.4944L4.74707 4.98919L0.922612 8.48275C0.853275 8.5371 0.795208 8.60611 0.752046 8.68552C0.708883 8.76492 0.681556 8.853 0.671776 8.94419C0.661995 9.03538 0.669971 9.12773 0.695205 9.21548C0.720439 9.30323 0.762386 9.3845 0.818421 9.45416C0.874456 9.52381 0.943371 9.58032 1.02085 9.62025C1.09833 9.66018 1.1827 9.68261 1.26869 9.68615C1.35467 9.68969 1.44042 9.6743 1.52055 9.64086C1.60068 9.60741 1.67348 9.55668 1.73438 9.49184L6.11304 5.4957C6.1818 5.4331 6.23702 5.35541 6.27488 5.26786C6.31274 5.1803 6.33235 5.085 6.33235 4.98857C6.33235 4.89215 6.31274 4.79685 6.27488 4.70929C6.23702 4.62174 6.1818 4.54397 6.11304 4.48138L1.73438 0.481393C1.62377 0.376594 1.48189 0.317014 1.33399 0.313301V0.313455Z" fill="black"></path>
             </svg>
@@ -434,10 +689,41 @@
 
             </div>
         </div>
-
-
     </div>
 </div>
+
+
+    <script>
+        $(document).ready(function () {
+            $('.region-select').change(function () {
+                $('.subway-select').val('')
+            })
+            $('.subway-select').change(function () {
+                $('.region-select').val($('.subway-select').find('option:selected').attr('data'))
+            })
+            $('.city_select').change(function () {
+                let city_uuid = $('.city_select').find('option:selected').val()
+                if (city_uuid !== '') {
+                    $.ajax({
+                            url: "/catalog/ajax_regions?city=" + city_uuid,
+                            type: "GET",
+                            success: (r) => {
+                                $('.regions_ajax_nest').html(r)
+                            }
+                        },
+                    )
+                    $.ajax({
+                            url: "/catalog/ajax_subway?city=" + city_uuid,
+                            type: "GET",
+                            success: (r) => {
+                                $('.subways_ajax_nest').html(r)
+                            }
+                        },
+                    )
+                }
+            })
+        })
+    </script>
 
 
 <footer class="footer-container-main mt_0">
