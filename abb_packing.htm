@@ -344,7 +344,7 @@
 
     
 
-    <section class="lk city_page">
+    <section class="lk instant packaging">
         <div class="container">
             <div class="lk_wrap">
                 
@@ -354,27 +354,15 @@
                 ЛК: <span>Фасовка</span>
             </label>
             <div class="my_lk_panel">
-
                 <a href="vitrina.htm" class="non_active_link">
                     Добавление товара на витрину
                 </a>
-
                 <a href="my_shop_settings.htm" class="non_active_link">
                     Настройки
                 </a>
-
                 <a href="/cabinet/orders/20e8b024-cd27-4b85-9351-a2d0bd7a9c60/" class="non_active_link">
                     Заказы
                 </a>
-
-
-
-
-
-
-
-
-
                 <a href="new_products.htm" class="active_link">
                     Фасовка
                 </a>
@@ -432,200 +420,80 @@
             <div class="lk_preorder_top">
                 <img src="image/product.jpg" alt="item">
                 <div class="lk_preorder_info">
-                    <p class="lk_preorder_text">Бензол - Предзаказы</p>
-                    
+                    <p class="lk_preorder_text">Бензол</p>
                     <p class="lk_preodred_cat">
-                        Категория: <span>Химические реаткивы</span>
+                        Категория: <span>Химические реактивы</span>
                     </p>
-                    <input type="checkbox" id="form_preorder_wrap">
-                    <form action="https://kramp.cc/cabinet/packages/instant/20e8b024-cd27-4b85-9351-a2d0bd7a9c60/0d83259f-9781-440c-b915-6755cad85db0/" method="get" class="form_preorder_wrap">
-                        <div class="filter_main_mob">
-                            <p>Фильтр</p>
-                            <label for="form_preorder_wrap" class="close_filter">
-                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.4971 9.0001L17.6895 1.80773C18.1035 1.39375 18.1035 0.724601 17.6895 0.310613C17.2755 -0.103375 16.6064 -0.103375 16.1924 0.310613L9.00002 7.50299L1.80761 0.310613C1.39362 -0.103375 0.724479 -0.103375 0.310491 0.310613C-0.103497 0.724601 -0.103497 1.39375 0.310491 1.80773L7.50286 9.0001L0.310491 16.1925C-0.103497 16.6065 -0.103497 17.2756 0.310491 17.6896C0.516957 17.8961 0.788004 17.9998 1.05905 17.9998C1.3301 17.9998 1.60114 17.896 1.80761 17.6896L8.99998 10.4972L16.1924 17.6896C16.3988 17.8961 16.6699 17.9998 16.9409 17.9998C17.212 17.9998 17.483 17.896 17.6895 17.6896C18.1035 17.2756 18.1035 16.6065 17.6895 16.1925L10.4971 9.0001Z" fill="#B7B7B7"></path>
-                                </svg>
-                            </label>
-                        </div>
+                    <p class="lk_preodred_cat">
+                        Город: <span>г.Москва</span>
+                    </p>
+                </div>
+            </div>
+            <form action="https://kramp.cc/cabinet/packages/instant/20e8b024-cd27-4b85-9351-a2d0bd7a9c60/0d83259f-9781-440c-b915-6755cad85db0/save" class="lk_packaging_wrap" method="post">
+                <input type="hidden" name="uuid" value="301e1ef9-cefc-4b61-9762-f48cd01c4b8e">
+                <input type="hidden" name="product_uuid" value="0d83259f-9781-440c-b915-6755cad85db0">
+                <input type="hidden" name="city_uuid" value="cf47f6ef-d588-494f-b145-b91d11db45b2">
+                <input type="hidden" name="order_type_id" value="1">
+                
+
+
+
+                <div class="lk_packaging_top">
+                    <div class="lk_packaging_input">
+                        <p class="lk_packaging_label">Фасовка</p>
+                        <input type="number" step="0.001" class="packaging_input" name="amount" id="packaging-1" placeholder="0" value="0.0">
+                    </div>
+                    <div class="lk_packaging_input">
+                        <p class="lk_packaging_label">Единицы измерения</p>
                         <div class="order_select">
                             <div class="order_select_box">
-
                                 <div class="filter-select__box">
-                                    <select class="filter-select" name="city" id="district-select">
-                                        <option value="" selected="selected">Все</option>
+                                    <select class="filter-select" name="unit_id">
                                         
-                                            <option value="94b989ae-c55c-405d-b7db-a8d9497d9cb6">Адлер (Краснодарский край)</option>
+                                            <option value="1">мг</option>
                                         
-                                            <option value="94b989ae-c55c-405d-b7db-a8d9497d9cb6">Адлер (Краснодарский край)</option>
+                                            <option value="2" selected="selected">г</option>
                                         
-                                            <option value="94b989ae-c55c-405d-b7db-a8d9497d9cb6">Адлер (Краснодарский край)</option>
+                                            <option value="3">кг</option>
                                         
-                                            <option value="94b989ae-c55c-405d-b7db-a8d9497d9cb6">Адлер (Краснодарский край)</option>
+                                            <option value="4">мл</option>
                                         
-                                            <option value="44194a5f-23c3-471c-afdc-afc3af21cfe5">Благовещенск (Амурская область)</option>
+                                            <option value="5">л</option>
                                         
-                                            <option value="44194a5f-23c3-471c-afdc-afc3af21cfe5">Благовещенск (Амурская область)</option>
-                                        
-                                            <option value="44194a5f-23c3-471c-afdc-afc3af21cfe5">Благовещенск (Амурская область)</option>
-                                        
-                                            <option value="44194a5f-23c3-471c-afdc-afc3af21cfe5">Благовещенск (Амурская область)</option>
-                                        
-                                            <option value="8f1cf311-455f-419c-8677-4e4612c9970c">Владивосток (Приморский край)</option>
-                                        
-                                            <option value="8f1cf311-455f-419c-8677-4e4612c9970c">Владивосток (Приморский край)</option>
-                                        
-                                            <option value="8f1cf311-455f-419c-8677-4e4612c9970c">Владивосток (Приморский край)</option>
-                                        
-                                            <option value="8f1cf311-455f-419c-8677-4e4612c9970c">Владивосток (Приморский край)</option>
-                                        
-                                            <option value="535ebb27-5e6d-4c6e-8dcd-5be950f6c8dd">Иркутск (Иркутская область)</option>
-                                        
-                                            <option value="535ebb27-5e6d-4c6e-8dcd-5be950f6c8dd">Иркутск (Иркутская область)</option>
-                                        
-                                            <option value="535ebb27-5e6d-4c6e-8dcd-5be950f6c8dd">Иркутск (Иркутская область)</option>
-                                        
-                                            <option value="535ebb27-5e6d-4c6e-8dcd-5be950f6c8dd">Иркутск (Иркутская область)</option>
-                                        
-                                            <option value="cf47f6ef-d588-494f-b145-b91d11db45b2">Казань (Республика Татарстан)</option>
-                                        
-                                            <option value="cf47f6ef-d588-494f-b145-b91d11db45b2">Казань (Республика Татарстан)</option>
-                                        
-                                            <option value="cf47f6ef-d588-494f-b145-b91d11db45b2">Казань (Республика Татарстан)</option>
-                                        
-                                            <option value="cf47f6ef-d588-494f-b145-b91d11db45b2">Казань (Республика Татарстан)</option>
-                                        
-                                            <option value="ecafbce1-73d7-43af-9d48-3104d7129e2c">Комсомольск-на-Амуре (Хабаровский край)</option>
-                                        
-                                            <option value="ecafbce1-73d7-43af-9d48-3104d7129e2c">Комсомольск-на-Амуре (Хабаровский край)</option>
-                                        
-                                            <option value="ecafbce1-73d7-43af-9d48-3104d7129e2c">Комсомольск-на-Амуре (Хабаровский край)</option>
-                                        
-                                            <option value="ecafbce1-73d7-43af-9d48-3104d7129e2c">Комсомольск-на-Амуре (Хабаровский край)</option>
-                                        
-                                            <option value="fef154eb-5300-46d7-916e-f60e6a1d193e">Москва</option>
-                                        
-                                            <option value="fef154eb-5300-46d7-916e-f60e6a1d193e">Москва</option>
-                                        
-                                            <option value="fef154eb-5300-46d7-916e-f60e6a1d193e">Москва</option>
-                                        
-                                            <option value="fef154eb-5300-46d7-916e-f60e6a1d193e">Москва</option>
-                                        
-                                            <option value="5c0d690f-9d3b-40b8-8a6d-40cab30aacbe">Набережные Челны (Республика Татарстан)</option>
-                                        
-                                            <option value="0b308c80-7235-470d-93d6-d98fa3a94164">Находка (Приморский край)</option>
-                                        
-                                            <option value="0b308c80-7235-470d-93d6-d98fa3a94164">Находка (Приморский край)</option>
-                                        
-                                            <option value="0b308c80-7235-470d-93d6-d98fa3a94164">Находка (Приморский край)</option>
-                                        
-                                            <option value="0b308c80-7235-470d-93d6-d98fa3a94164">Находка (Приморский край)</option>
-                                        
-                                            <option value="7d2e5fd1-cebe-4389-82ab-17a7cd5387a0">Нерюнгри (Республика саха)</option>
-                                        
-                                            <option value="7d2e5fd1-cebe-4389-82ab-17a7cd5387a0">Нерюнгри (Республика саха)</option>
-                                        
-                                            <option value="7d2e5fd1-cebe-4389-82ab-17a7cd5387a0">Нерюнгри (Республика саха)</option>
-                                        
-                                            <option value="7d2e5fd1-cebe-4389-82ab-17a7cd5387a0">Нерюнгри (Республика саха)</option>
-                                        
-                                            <option value="59f6af22-6375-4664-a1b7-34392b6b678c">Новосибирск (Новосибирская область)</option>
-                                        
-                                            <option value="59f6af22-6375-4664-a1b7-34392b6b678c">Новосибирск (Новосибирская область)</option>
-                                        
-                                            <option value="59f6af22-6375-4664-a1b7-34392b6b678c">Новосибирск (Новосибирская область)</option>
-                                        
-                                            <option value="59f6af22-6375-4664-a1b7-34392b6b678c">Новосибирск (Новосибирская область)</option>
-                                        
-                                            <option value="e9c93bc3-ed94-40a8-ab5f-aaf19eadb49e">Улан-Удэ (Республика Бурятия)</option>
-                                        
-                                            <option value="e9c93bc3-ed94-40a8-ab5f-aaf19eadb49e">Улан-Удэ (Республика Бурятия)</option>
-                                        
-                                            <option value="e9c93bc3-ed94-40a8-ab5f-aaf19eadb49e">Улан-Удэ (Республика Бурятия)</option>
-                                        
-                                            <option value="e9c93bc3-ed94-40a8-ab5f-aaf19eadb49e">Улан-Удэ (Республика Бурятия)</option>
-                                        
-                                            <option value="00e40f6b-75b8-4281-ac6c-f633ed4baee2">Уссурийск (Приморский край)</option>
-                                        
-                                            <option value="00e40f6b-75b8-4281-ac6c-f633ed4baee2">Уссурийск (Приморский край)</option>
-                                        
-                                            <option value="00e40f6b-75b8-4281-ac6c-f633ed4baee2">Уссурийск (Приморский край)</option>
-                                        
-                                            <option value="00e40f6b-75b8-4281-ac6c-f633ed4baee2">Уссурийск (Приморский край)</option>
-                                        
-                                            <option value="330e6e45-85e5-43ec-a0b1-500fd9d88dd7">Хабаровск (Хабаровский край)</option>
-                                        
-                                            <option value="330e6e45-85e5-43ec-a0b1-500fd9d88dd7">Хабаровск (Хабаровский край)</option>
-                                        
-                                            <option value="330e6e45-85e5-43ec-a0b1-500fd9d88dd7">Хабаровск (Хабаровский край)</option>
-                                        
-                                            <option value="330e6e45-85e5-43ec-a0b1-500fd9d88dd7">Хабаровск (Хабаровский край)</option>
-                                        
-                                            <option value="1de42345-ab1d-4484-80a5-2b04981e0d6b">Чита (Забайкальский край)</option>
-                                        
-                                            <option value="1de42345-ab1d-4484-80a5-2b04981e0d6b">Чита (Забайкальский край)</option>
-                                        
-                                            <option value="1de42345-ab1d-4484-80a5-2b04981e0d6b">Чита (Забайкальский край)</option>
-                                        
-                                            <option value="1de42345-ab1d-4484-80a5-2b04981e0d6b">Чита (Забайкальский край)</option>
-                                        
-                                            <option value="bf208a0b-94f6-43c9-b0c0-8ab535432d53">Южно-Сахалинск (Сахалинская область)</option>
-                                        
-                                            <option value="bf208a0b-94f6-43c9-b0c0-8ab535432d53">Южно-Сахалинск (Сахалинская область)</option>
-                                        
-                                            <option value="bf208a0b-94f6-43c9-b0c0-8ab535432d53">Южно-Сахалинск (Сахалинская область)</option>
-                                        
-                                            <option value="bf208a0b-94f6-43c9-b0c0-8ab535432d53">Южно-Сахалинск (Сахалинская область)</option>
+                                            <option value="6">шт</option>
                                         
                                     </select>
                                 </div>
-                                
-
                             </div>
                         </div>
-                        <button type="submit" class="preorder_btn">Показать</button>
-                    </form>
-                </div>
-            </div>
-            <div class="review_panel_custom">
-                <label for="form_preorder_wrap" class="lk_btn_call">
-                    Фильтр
-                </label>
-            </div>
-            
-            
-            
-            
-            
-                <div class="lk_preorder_table lk_preorder_table_3">
-                    <p class="lk_table_xl_title">г.Москва</p>
-                    <div class="lk_table_wrap">
-                        <div class="lk_table_title">
-                            <p>Фасовка</p>
-                            <p>Цена</p>
-                            <p>В наличии</p>
+                    </div>
+                    <div class="lk_packaging_input">
+                        <p class="lk_packaging_label">Цена</p>
+                        <div class="packaging_input_box">
+                            <input type="number" class="packaging_input" name="price" id="price-1" placeholder="0" value="0.00">
+                            <span>руб.</span>
                         </div>
-                        <div class="lk_table_item_wrap">
-                            <div class="lk_table_item">
-                                <div class="empty-row">
-                                    Нет фасовок для этого города
-                                </div>
-                            </div>
-                            
+                    </div>
+                    <div class="lk_packaging_input">
+                        <p class="lk_packaging_label">Себестоимость</p>
+                        <div class="packaging_input_box">
+                            <input type="number" class="packaging_input" name="net_cost" id="fine-1" placeholder="0" value="0.00">
+                            <span>руб.</span>
                         </div>
-                        <div class="lk_table_bottom">
-                            <a href="abb_packing.htm">Добавить
-                                фасовку</a>
+                    </div>
+                    <div class="lk_packaging_input">
+                        <p class="lk_packaging_label">Выплата сотруднику</p>
+                        <div class="packaging_input_box">
+                            <input type="number" class="packaging_input" name="delivery_cost" id="payout-1" placeholder="0" value="0.00">
+                            <span>руб.</span>
                         </div>
                     </div>
                 </div>
-            
-
-            
-            
-
-
-
-
+                <div class="lk_packaging_bottom">
+                    <!--                        <a href="#">Добавить несколько</a>-->
+                    <button type="submit">Сохранить фасовку</button>
+                </div>
+            </form>
         </div>
             </div>
         </div>
