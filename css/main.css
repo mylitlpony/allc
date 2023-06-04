@@ -2393,7 +2393,7 @@ input#close-info:checked+.messenger_modal_info {
     transition: .3s
 }
 
-.addresses-form .lk_form_button button[type=submit].empty:hover,
+
 .auction__messages__form button:hover,
 .category_filter_btn:hover,
 .danger_btn:hover,
@@ -7213,22 +7213,68 @@ input#close-info {
     background-color: #b7b7b7
 }
 
-.addresses-form .lk_form_button button[type=submit] {
-    margin-left: auto;
-    border: 1px solid #000
+
+.addresses-form .lk_form_button {
+    display: grid;
+    grid-template-columns: 170px 170px;
+    justify-content: flex-end;
+    grid-gap: 16px;
 }
 
-.addresses-form .lk_form_button button[type=submit]:not(:first-child),
-.settings-main__content {
-    margin-left: 18px
+@media (max-width: 576px) {
+    .addresses-form .lk_form_button {
+        grid-template-columns: 1fr;
+        grid-gap: 14px;
+    }
 }
 
-.addresses-form .lk_form_button button[type=submit].empty {
+.addresses-form .lk_form_button.only-child {
+    grid-template-columns: 170px;
+}
+
+.addresses-form .lk_form_button button.add {
     background: #fff;
     color: #000;
-    border: 1px solid #000;
-    max-width: max-content
+    border: 1px solid #000000;
 }
+
+.addresses-form .lk_form_button button.add:hover {
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.12);
+}
+
+.addresses-form .lk_form_button button [type=submit] {
+    margin-left: auto;
+    border: 1px solid #000000;
+}
+
+.addresses-form .lk_form_button button [type=submit]:not(:first-child) {
+    margin-left: 18px;
+}
+
+@media (max-width: 900px) {
+    .addresses-form .lk_form_button button [type=submit]:not(:first-child) {
+        margin-left: 0;
+        margin-top: 14px;
+    }
+}
+
+.addresses-form .lk_form_button button [type=submit].empty {
+    background: #fff;
+    color: #000;
+    border: 1px solid #000000;
+    max-width: max-content;
+}
+
+.addresses-form .lk_form_button button [type=submit].empty:hover {
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 900px) {
+    .addresses-form .lk_form_button button [type=submit].empty {
+        max-width: 100%;
+    }
+}
+
 
 .addresses-footer {
     margin: 16px 0 14px;
@@ -7329,10 +7375,7 @@ input#close-info {
         order: 1
     }
 
-    .addresses-form .lk_form_button button[type=submit].empty,
-    .addresses-form-bottom__item .lk_file_input-image {
-        max-width: 100%
-    }
+
 
     .addresses-form-bottom__item>p {
         margin: 0 0 6px
@@ -7342,10 +7385,7 @@ input#close-info {
         min-height: 130px
     }
 
-    .addresses-form .lk_form_button button[type=submit]:not(:first-child) {
-        margin-left: 0;
-        margin-top: 14px
-    }
+
 
     .addresses-footer .lk_form_button {
         order: 1;
@@ -7570,7 +7610,7 @@ input#close-info {
 
 .lk_preorder_table_3 .lk_table_item,
 .lk_preorder_table_3 .lk_table_title {
-    grid-template-columns: 2fr 2fr 1fr 3fr
+    grid-template-columns: 1fr 1.2fr 1.3fr 1.0fr 1.3fr 0.7fr
 }
 
 .lk_preorder_table_3 .lk_btn_wrap a {
@@ -8234,6 +8274,7 @@ input#close-info {
     border-bottom: 1px solid #ebebeb;
     position: relative;
     z-index: 3
+    
 }
 
 .messenger_wrap input[type=checkbox] {
@@ -8338,7 +8379,8 @@ input#close-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 54px;
-    width: 100px
+    width: 100px;
+    
 }
 
 .messenger_add_chat,
@@ -9705,7 +9747,10 @@ input[type=number]:hover {
 
     .messenger_right_container {
         display: grid;
-        grid-template-columns: 50px 1fr
+        grid-template-columns: 50px 1fr;
+        position: sticky;
+        top: 0;
+       
     }
 
     .messenger_right_top {
